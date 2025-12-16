@@ -26,6 +26,7 @@ msg_folder_not_empty=Install folder must be empty. Please choose an empty folder
 msg_on_hold=Updates are temporarily paused by server.
 
 msg_same_folder=Install folder cannot be the same folder as the updater.\n\nPlease choose a different folder (subfolders are allowed).
+msg_connection_failed=Unable to connect to update servers (Cloudflare/GitHub/Private).\n\nPlease check your internet connection or try again later.
 
 [de]
 title=Assistant Updater
