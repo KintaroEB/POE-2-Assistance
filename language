@@ -25,6 +25,8 @@ msg_set_path=Please set the install path first.
 msg_folder_not_empty=Install folder must be empty. Please choose an empty folder or uninstall first.
 msg_on_hold=Updates are temporarily paused by server.
 
+msg_same_folder=Install folder cannot be the same folder as the updater.\n\nPlease choose a different folder (subfolders are allowed).
+
 [de]
 title=Assistant Updater
 installed_version=Installierte Version
@@ -51,3 +53,5 @@ status_updater_too_old=Updater zu alt
 msg_set_path=Bitte zuerst den Installationspfad setzen.
 msg_folder_not_empty=Der Installationsordner muss leer sein. Bitte einen leeren Ordner wählen oder zuerst deinstallieren.
 msg_on_hold=Updates sind serverseitig pausiert.
+
+msg_same_folder=Der Installationsordner darf nicht identisch mit dem Updater-Ordner sein.\n\nBitte wählen Sie einen anderen Ordner (Unterordner sind erlaubt).
