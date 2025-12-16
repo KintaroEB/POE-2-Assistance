@@ -88,7 +88,7 @@ msg_on_hold=更新已被服务器暂时暂停。
 msg_same_folder=安装文件夹不能与更新器所在文件夹相同。\n\n请选择其他文件夹（允许使用子文件夹）。
 msg_connection_failed=无法连接到更新服务器（Cloudflare/GitHub/私有）。\n\n请检查您的网络连接或稍后再试。
 
-[kr]
+[ko]
 title=어시스턴트 업데이트 도구
 installed_version=설치된 버전
 server_version=서버 버전
