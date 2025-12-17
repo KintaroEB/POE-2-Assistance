@@ -29,7 +29,7 @@ msg_same_folder=Install folder cannot be the same folder as the updater.\n\nPlea
 msg_connection_failed=Unable to connect to update servers (Cloudflare/GitHub/Private).\n\nPlease check your internet connection or try again later.
 
 [de]
-title=Assistenten-Updater
+title=Assistant Updater
 installed_version=Installierte Version
 server_version=Server Version
 status=Status
@@ -48,7 +48,7 @@ clear_log=Protokoll leeren
 status_on_hold=Angehalten
 status_not_installed=Nicht installiert
 status_update_available=Update verfügbar
-status_up_to_date=Auf dem neuesten Stand
+status_up_to_date=Up to date
 status_local_newer=Lokal neuer
 status_updater_too_old=Updater zu alt
 msg_set_path=Bitte legen Sie zuerst den Installationspfad fest.
@@ -138,7 +138,7 @@ clear_log=Очистить журнал
 status_on_hold=Приостановлено
 status_not_installed=Не установлено
 status_update_available=Доступно обновление
-status_up_to_date=Актуальная версия
+status_up_to_date=Up to date
 status_local_newer=Локальная версия новее
 status_updater_too_old=Обновлятор слишком старый
 msg_set_path=Пожалуйста, сначала укажите путь установки.
