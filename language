@@ -31,7 +31,7 @@ msg_connection_failed=Unable to connect to update servers (Cloudflare/GitHub/Pri
 [de]
 title=Assistenten-Updater
 installed_version=Installierte Version
-server_version=Server-Version
+server_version=Server Version
 status=Status
 executable=Executable:
 install_folder=Installationsordner:
