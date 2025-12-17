@@ -1,4 +1,4 @@
-8.5
+﻿8.5
 updater_true
 min_updater_version=1.1
 
@@ -37,7 +37,7 @@ Changelog
   - supports relative file paths
   - includes sample configurations
   - editable on-load via assistant or with notepad
-  - keep a backup — updates overwrite the list file
+  - keep a backup â€” updates overwrite the list file
   - significantly reduced ggpx load times
 
 - refactored code for lower AV footprint and reduced intrusiveness
@@ -82,7 +82,7 @@ Changelog
 - added full support for japanese game version
 - added client side system time synchronization even if disabled by windows settings
 
-- added “low memory mode” for VM users
+- added â€œlow memory modeâ€ for VM users
   - this will be active automatically while using blackscreen mode for botting
   - in theory it can safe up to 20% of system memory
 
@@ -306,7 +306,7 @@ Changelog
 - fixed an issue where charged staff key could be spammed
 
 3.8
-- updated chinese translations with help of a native (非常感谢你!)
+- updated chinese translations with help of a native (éžå¸¸æ„Ÿè°¢ä½ !)
 - added buff based pointers
 	- power charge
 	- frenzy charge
