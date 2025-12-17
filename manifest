@@ -7,24 +7,481 @@ min_updater_version=1.1
 
 
 #--- LINE 9
-01 TEST START
+Changelog
+8.4
+  - fixed minimap exploration area being twice the size
+  - fixed minor issue with internal GGPX downloader
+  - fixed general minor errors
+  - added an extra more transparent minimap option for GGPX loading
 
+8.3
+  - fixed minimap reveal reset on area change
+  - fixed player stat readouts on specific events
+  - fixed general minor errors
 
+8.2
+  - added POE 0.4.0 support
+  - good luck <3
 
+8.1
+- GGPX skill list loading feature
+- general fixes and improvements
 
-05 TEST MID
+- POE2 :: GGPX UPDATE (temporarily)
 
+- YOU MUST update all files - everything prior is outdated
+  - use the '_GGPX download' button to get up to date files
 
+8.0
+- GGPX list loading feature
+  - supports relative file paths
+  - includes sample configurations
+  - editable on-load via assistant or with notepad
+  - keep a backup — updates overwrite the list file
+  - significantly reduced ggpx load times
 
+- refactored code for lower AV footprint and reduced intrusiveness
 
+- YOU MUST update all files - everything prior is outdated
+  - use the '_GGPX download' button to get up to date files
 
+7.8
+- general fixes and improvements
 
+7.7
+- fixed minimap reveal reset on re-entering a zone/map
+  - works like before
+  - no fuss / no caveat -> exactly as before
 
-LUL
+7.6
+- updated offline game files for poe2
+- added UI GGPX version display
+- added UI download of current GGPX files
+- added auto restart on certain UI options
+  - keeping app elevation
 
+7.5
+- updated offline game files for 3.27
+- added an UI option to reset game paths
 
+7.4
+- added support for upcoming 3.27 poe1 release
+  - 99.99% sure we will have no delay at league start
 
+- (experimental) reduced loading time with light/mid/heavy/blackscreen preset
+  - non-essential stuff like sounds and effects are no longer being pre-loaded
+  - report any issues or anomalies in #bug-report
 
+- adjusted memory model to support dynamic runtime changes
+- adjusted multi-threaded memory readouts
+- updated internal patcher for compatibility with game "hotfix" updates
+  - high probability for small hotfix updates being virtually irrelevant
 
+- added "dual" autopot version for life and es to be considered at the same time
+- added automatic detection for poe2 japanese game version
+- added full support for japanese game version
+- added client side system time synchronization even if disabled by windows settings
 
-30 TEST END
+- added “low memory mode” for VM users
+  - this will be active automatically while using blackscreen mode for botting
+  - in theory it can safe up to 20% of system memory
+
+- added minor internal metrics for future optimization
+- improved accuracy of flask trigger logic under unstable frametime performance
+- fixed high startup time on Hyper-V / VmWare
+- fixed a rare lighting issue in interlude section of the game
+- fixed a bug where bufflist occasionally duplicated expired entries
+- fixed incorrect region parsing when game language is korean
+- fixed a rare edge case of high cpu usage after conintious gameplay of 10+ hours
+- fixed scaling issue at >200% dpi
+- general cleanup of obsolete debug code
+
+- improved support for handheld devices (others most likely work fine)
+  - ASUS ROG Ally (X)
+  - Lenovo Legion Go
+  - MSI Claw (series)
+  - AYANEO 2
+
+7.3
+- added japanese hideout detection
+
+7.2
+- minor bug fix
+
+7.1
+- fixed a rare edge case while loading GGPX files
+- added a dock like settings window for future features
+  - exposed tickrate scaling
+  - 0   -> 50  updates/sec
+  - 100 -> 200 updates/sec
+  - this is mostly a placebo slider / the updaterate is out of human perception
+
+7.0
+- fixed an issue with hideout detection
+- added chinese hideout detection
+- fixed a rare issue with bufflist readouts
+
+6.9
+- general update for 0.3.0c
+- korean hideout is detected now 
+
+6.8
+- fixed an issue with life readout in some rare cases
+- fixed an issue with internal bufflist having dead entries
+- fixed a rare crash after updating windows
+    - version 24H2 - build 26100.6584
+
+6.7
+- fixed POE1 memory model
+- added self update method for POE1
+
+6.6
+- 0.3.0 POE2 memory model update (permanent fix)
+  - mandatory update to support self update method
+  - small patches do no longer break functionality
+
+6.5
+- 0.3.0 POE2 memory model update (temporary fix)
+- server side patch - restart the app to fetch the update
+
+6.4
+- fixed readouts for playerstats on POE1
+- prepared changes for v6.5 to support POE2 0.3 release
+
+6.3
+- fixed a rare issue with patching spells on POE1
+
+6.2
+- added support for korean language
+- fixed a rare crash after updating windows
+	- version 24H2 - build 26100.4652
+- reduced download size on startup
+
+6.1
+- fixed zoomout issue on POE1
+- fixed minimap reveal being reversed in some rare cases - both game versions
+- improved responsiveness with controller auto potion
+- fixed a rare crashing issue on WIN 11 26100.4351
+
+6.0
+- fixed energy shield readout
+- fixed charge value readout on buffs
+- updated quicksilver flask script for better usage
+  - check **scripts** folder
+
+5.9
+- 3.26 POE1 memory model update
+- enabled ESCAPE instead of DISCONNECT logout (game pause got introduced)
+- added support for text highlighting on all available languages
+- fixed 2.4 / 3.0 zoomout
+
+5.8
+- 0.2.1 POE2 memory model update
+- general update with internal changes
+- improved debug thread
+
+5.7
+- prepared update for 3.26 POE1 memory model
+	- assisant will be ready shortly after the league start
+- added support for text highlighting on all available languages
+- fixed a rare 'corrupted application' error
+
+5.6
+- minor bugfixes
+- enabled auth on non-windows user devices
+- added an independent updater
+  - current settings are preserved
+  - current script files backup
+  - per region server detection: Cloudflare preferred
+
+5.5
+- fixed a critical error on virtual machines
+	- thank you for the precise reports! <3
+- added 2 POE1 scripts for Quicksilver and DPS flasks
+- added another server to fallback on if the app update fails
+- general bug fixes and corrections
+
+5.4
+- removed server choice out of the config.ini
+- added in-app server detection based on your region
+	- added chinese mainland server
+	- added south/north america server
+	- added russian server
+- fixed long startup time on WIN11 24H2 in some rare cases
+- added LICH Eternal Life AUTOPOT method
+
+5.3
+- fixed server encryption
+- fixed a potential issue with WIN11 24H2 where patching did not work
+- fixed a couple corrupted file errors potentially breaking the game
+
+5.2
+- added several error codes for reporting issues while applying zoomout and similar
+	- check config.ini -> ErrorEx
+	- usually PackCheck.exe or re-downloading the game helps!
+	- most issues are related to corrupted game files
+
+5.1
+- fixed steam version mismatch
+- GGG is mixing again
+- studio is on fire
+
+5.0
+- 0.2.0 POE2 memory model update
+- fixed a visual UI bug on WIN11 24H2
+- fixed virtual controller performance while multiple physical controllers are connected
+- fixed virtual controller behavior while a bluetooth controller is present
+- fixed a patching error regarding to the steam version
+- fixed an input issue while running together with EB2
+	- EB2 input has higher priority depending on the situation
+- improved VmWare/Hyper-V patch performance
+- improved POE2 loading times after applying presets
+- improved handheld compatibility
+- simplified lighting/shadow calculation on all presets
+	- theoretical lower stress on GPU shader performance
+- changed auth regeneration
+- many more internal changes regarding app safety
+	- we are feature focused of course but safety first!
+
+4.6
+- changed how you choose between POE1 and POE2
+- combined all possible AUTOPOT variantions
+	- added drop down menu to select AUTOPOT version
+- fixed some scripts
+- fixed server side GGPX compression
+
+4.5
+- added support for effect removal/blackscreen mode
+	- download from the sources like before
+	- choose the correct folder of course ^^
+	- POE1 has a different folder and different files (even if names are the same)
+- enabled controller support for POE1
+- fixed scripts for POE1/POE2
+	- fixed double e press
+	- fixed q press
+4.4
+- POE1 support
+  - basics like minimap reveal and zoomout works!
+  - GGPX files coming later
+- unified AUTOPOT THREAD to have Mind over Matter support with UI checkbox
+- added several THREADS to UI
+- added "CUSTOM 1" THREAD
+- added "CUSTOM 2" THREAD
+- changed how THREADS are reloading settings on SAVE
+    - changing UI settings will cause THREADS to reload, regardless of whether the current THREAD is halted
+- fixed chain disconnecting when coming back to hideout
+- final fix for Hyper-V Support!
+
+4.3
+- VmWare/Hyper-V machines are now fully supported
+- added an option to enable/disable hideout for scripts
+- fixed an error which could occur while using Epic Games version when applying zoomout or similar
+- added POE1 support (not functional yet - but well prepared)
+
+4.2
+- general update
+- added several user scripts
+
+4.1
+- fixed high charges detection
+- added UISTACK pointer to track skills with UI specific stacks
+- added DEBUG THREAD to post all current player buffs and values
+
+4.0
+- added buff based pointers
+	- found in _POEMEMORY.BUFFLIST by internal memory name 
+- added __THREAD__CUSTOM
+	- create your own script depending on memory state
+	- config.ini to enable
+
+3.9
+- added Epic Games offset switch internally when detecting the game
+- added a chinese offset switch option in the UI
+- added support for handheld devices like the ASUS ROG Ally (reWASD needed - Windows only)
+- added a UI key for charged staff script usage
+- added a UI checkbox for __THREAD__BUFF to enable automatic charged staff usage
+- added missing keys to virtual gamepad
+- updated scripts to align with internal data changes
+- updated chinese translations
+- fixed an issue where charged staff key could be spammed
+
+3.8
+- updated chinese translations with help of a native (非常感谢你!)
+- added buff based pointers
+	- power charge
+	- frenzy charge
+	- charged staff (monk skill)
+	- dm me to ask for more relevant buffs!
+- added __THREAD__BUFF thread to automate charged staff for example
+- updated internal memory model
+	- current memory model is patch safe
+	- meaning a patch cannot break offsets anymore
+- removed updater
+	- too many dependencies (almost never possible)
+
+3.6
+- added support for chinese localization
+- changed many internal functions
+
+3.5
+- 0.1.1 Patch ready
+- introduced 6 new detections on virus-total
+- fixed rubber-banding issues with monster hp always shown
+- resolved zoom-out-related issues
+- addressed a potential critical error when attempting to connect to github
+- added chinese region specific server to solve connection issues
+- config.ini allows server choice
+- introduced a new file format: 'ggpx'
+	- partial rewrite of LibGGPK3 for better performance and ggpx support
+	- significantly reduced overhead as a data type
+	- significantly improved patching speed!
+	- enabling delta patching of the original GGPK, though defaults must still be reloaded each time
+
+3.3
+- removed mandatory auth.key creation  (would only limit free users)
+- removed region check for known users (verified skips it of course)
+- fixed bug -> known files corrupted
+- fixed bug -> options cannot be applied
+- fixed bug -> out of sync with server time (time zone independent now)
+- added back "altered effects" option with prototype selections
+
+3.2
+- bug fix - sorry!
+
+3.1
+- atlas fog remove -> added clearer lines between maps!
+- added a singular option to apply custom effects (will be available soon)
+- poe2 installation path is saved and settings are applied with 1-click
+- fixed updater to properly update the current encryption key
+- region check is disabled upon reaching poe loaded state once
+- disabled ping check error message (https://github.com is mandatory to reach)
+- south america region should be supported natively now
+
+3.0b
+- minor bug fixes
+
+3.0a
+- added anti anti-cheat measures
+- added randomized filename (will rename on first startup)
+- added randomized window title
+- added inTown() check to scripts
+- added remove shadows/effects feature
+- added black screen mode feature
+- added server auth with private key feature
+- added fully encrypted server communication
+- added chinese region check because of illegal reselling
+- added a non-mandatory ping check (reveals potential connection issues)
+- changed binary compression and encryption to a private/unique method
+- changed data location to github
+
+2.3a
+- added remove atlas fog feature
+- added always show enemy hp feature
+- added remove delirium fog feature
+- added thread sync (internal function)
+- added notification message for free software
+- fixed zoomout reset during campaign and certain boss encounters
+- fixed an issue where XButton and Escape did not work as keys
+- increased basic tickrate by 5x (average readout now 25/sec)
+- adjusted GUI speed due to increased tickrate (GUI does not represent internal speed)
+
+2.2a
+- added controller support
+- added error handling of some edge cases
+- added support for hybrid builds
+- added support for mana as life builds
+
+2.1d
+- fixed network bug with proxifier
+
+2.1c
+- added partial controller support (button presses not yet)
+- added tooltip support for GUI
+- added more in-app guides
+- fixed .NET version check dependencies
+
+2.1b
+- all existing game versions are fully supported now
+- added minimap reveal to Steam and EpicGames version
+- added zoomout to Steam and EpicGames version
+- added proper message popup display
+- added in-app guides
+- added .NET version check dependencies
+- fixed rubberbanding while zoomout is active
+- removed in-memory maphack (deprecated solution anyway)
+
+2.0a
+- added minimap reveal (fog of war rendered)
+- added zoomout: x1.3 x1.6 x1.9
+- added function to restore GGPK (do that before you patch the game - run nopatch to avoid patching)
+- added automatic detection of game version (normal,steam,epic,korea,taiwan)
+- added configurable flask hotkeys
+- added local/server version display on GUI
+- added user input block on escape instead of logout to prevent deaths on input spam
+- improved tickrate
+- improved startup behavior
+- improved GUI performance
+- fixed out of screen GUI position
+- fixed behavior with Blood Magic
+- fixed GUI DPI scaling
+- fixed handling for encrypted VPN error (most VPN simply work - some chinese don't)
+
+1.6a
+- added maphack
+- added configurable hotkeys into GUI
+- startup is now almost instantly
+- server verification is now almost instantly
+- added save and exit sound
+- updated GUI
+- press ESCAPE instead of logout feature
+- fixed a bug with Chaos Inoculation
+
+1.5a
+- added a GUI for general settings and readouts
+- changes are valid immediately
+- script restructure
+- fixed button spam while dead
+
+1.4d
+- added korean client support
+- added epic games client support
+- fixed windows 11 restriction/bug
+- fixed server time error
+
+1.3a
+- added an updater to download the most recent version
+- changed patch detection
+- checking for app elevation (run as administrator is required)
+
+1.2a
+- added steam version support
+- added patch detection
+- run with proper admin rights
+- whitelist in antivirus software to avoid issues
+- korea client will not be supported
+
+1.1d
+- added version check for steam/korea
+- standalone client only for now
+- cleared up __THREAD__UTILITY (please adjust your values)
+
+1.1c
+- added active window check before keypress
+- added security check for character stat values
+
+1.1b
+- december 7 memory update
+- first functional release
+
+1.1a
+- initial release
+- draft __thread__utility
+- draft __thread__keystate
+- draft __thread__temporalrift
+- not functional; intended for inspection purposes only
+- current functions:
+  - autopot hp/mp
+	- autologout on lowhp
+	- any macro with a hotkey
+	- any combo skill while holding down a key for 500ms (as an example)
+	- chronomancer temporal rift assistance; only trigger if hp/mp is high enough (configurable values)
