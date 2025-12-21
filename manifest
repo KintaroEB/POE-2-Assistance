@@ -8,6 +8,22 @@ min_updater_version=1.2
 
 #--- LINE 9
 Changelog
+8.6
+  - fixed .NET v.10 version error
+    - assistant now focuses on .NET v.8.0.X versions only
+
+  - fixed a minor rare minimap reveal issue
+  - renamed "remove effects" function to "GGPX file load"
+    - blackscreen mode as well in same fashion
+
+  - improved loading times on preset: ligh/mid/heavy
+    - significantly improved loading times on blackscreen
+
+  - adjusted 'low memory mode' on virtual machines
+    - hyper-v and vmware machines RAM and V-RAM usage reduced by 40%
+
+  - improved general POE memory model to have none to little overhead
+  
 8.4
   - fixed minimap exploration area being twice the size
   - fixed minor issue with internal GGPX downloader
