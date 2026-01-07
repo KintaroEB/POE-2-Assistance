@@ -8,6 +8,9 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+8.8
+  - bug fixes - ty for the reports
+
 8.7
   - exposed POE2 playerstat "RAGE" for scripting
     - _POEMEMORY.CURRAGE

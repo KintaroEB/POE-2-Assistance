@@ -25,7 +25,7 @@ msg_set_path=Please set the install path first.
 msg_folder_not_empty=Install folder must be empty. Please choose an empty folder or uninstall first.
 msg_on_hold=Updates are temporarily paused by server.
 
-msg_same_folder=Install folder cannot be the same folder as the updater.\n\nPlease choose a different folder (subfolders are allowed).
+msg_same_folder=Install folder cannot be the same folder as the updater. Please choose a different folder (subfolders are allowed).
 msg_connection_failed=Unable to connect to update servers (Cloudflare/GitHub/Private).\n\nPlease check your internet connection or try again later.
 msg_defender_check =Please ensure that the selected folder is excluded in Windows Defender for Assistant to function properly.
 
@@ -56,7 +56,7 @@ msg_set_path=Bitte legen Sie zuerst den Installationspfad fest.
 msg_folder_not_empty=Der Installationsordner muss leer sein. Bitte wählen Sie einen leeren Ordner oder deinstallieren Sie zuerst.
 msg_on_hold=Updates sind serverseitig vorübergehend pausiert.
 
-msg_same_folder=Der Installationsordner darf nicht derselbe Ordner wie der Updater sein.\n\nBitte wählen Sie einen anderen Ordner (Unterordner sind erlaubt).
+msg_same_folder=Der Installationsordner darf nicht derselbe Ordner wie der Updater sein. Bitte wählen Sie einen anderen Ordner (Unterordner sind erlaubt).
 msg_connection_failed=Verbindung zu den Update-Servern (Cloudflare/GitHub/Privat) konnte nicht hergestellt werden.\n\nBitte überprüfen Sie Ihre Internetverbindung oder versuchen Sie es später erneut.
 msg_defender_check =Bitte stelle sicher, dass der ausgewählte Ordner in Windows Defender ausgeschlossen ist, damit Assistant ordnungsgemäß funktioniert.
 
@@ -87,7 +87,7 @@ msg_set_path=请先设置安装路径。
 msg_folder_not_empty=安装文件夹必须为空。请选择一个空文件夹或先进行卸载。
 msg_on_hold=更新已被服务器暂时暂停。
 
-msg_same_folder=安装文件夹不能与更新器所在文件夹相同。\n\n请选择其他文件夹（允许使用子文件夹）。
+msg_same_folder=安装文件夹不能与更新器所在文件夹相同。请选择其他文件夹（允许使用子文件夹）。
 msg_connection_failed=无法连接到更新服务器（Cloudflare/GitHub/私有）。\n\n请检查您的网络连接或稍后再试。
 msg_defender_check =请确保在 Windows Defender 中将所选文件夹排除在外，以便助手能够正常运行。
 
@@ -118,7 +118,7 @@ msg_set_path=먼저 설치 경로를 설정해 주세요.
 msg_folder_not_empty=설치 폴더는 비어 있어야 합니다. 빈 폴더를 선택하거나 먼저 제거해 주세요.
 msg_on_hold=업데이트가 서버에서 일시적으로 중지되었습니다.
 
-msg_same_folder=설치 폴더는 업데이트 도구와 동일한 폴더일 수 없습니다.\n\n다른 폴더를 선택해 주세요(하위 폴더는 허용됩니다).
+msg_same_folder=설치 폴더는 업데이트 도구와 동일한 폴더일 수 없습니다. 다른 폴더를 선택해 주세요(하위 폴더는 허용됩니다).
 msg_connection_failed=업데이트 서버(Cloudflare/GitHub/비공개)에 연결할 수 없습니다.\n\n인터넷 연결을 확인하거나 나중에 다시 시도해 주세요.
 msg_defender_check =어시스턴트가 정상적으로 작동하도록 선택한 폴더가 Windows Defender에서 제외되어 있는지 확인하세요.
 
@@ -149,6 +149,6 @@ msg_set_path=Пожалуйста, сначала укажите путь уст
 msg_folder_not_empty=Папка установки должна быть пустой. Пожалуйста, выберите пустую папку или сначала выполните удаление.
 msg_on_hold=Обновления временно приостановлены сервером.
 
-msg_same_folder=Папка установки не может совпадать с папкой обновлятора.\n\nПожалуйста, выберите другую папку (подпапки разрешены).
+msg_same_folder=Папка установки не может совпадать с папкой обновлятора. Пожалуйста, выберите другую папку (подпапки разрешены).
 msg_connection_failed=Не удалось подключиться к серверам обновлений (Cloudflare/GitHub/частные).\n\nПожалуйста, проверьте подключение к интернету или попробуйте позже.
 msg_defender_check =Пожалуйста, убедитесь, что выбранная папка исключена в Windows Defender, чтобы помощник мог работать корректно.
