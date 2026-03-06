@@ -9,9 +9,12 @@ min_updater_version=1.4
 #--- LINE 9
 Changelog
 8.9
-  - MEMORY UPDTAE for 3.28 Mirage League
+  - MEMORY UPDATE for 3.28 Mirage League
+    - Autopot and Script Engine working like before
   - restore function fixed (no longer corrupted game files)
   - zoomout currently not functional (fixed in time)
+  - minimap reveal is working without errors
+    - errors may occur due to POE1 native issues
 
 8.8
   - bug fixes - ty for the reports
