@@ -8,6 +8,11 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+8.9
+  - MEMORY UPDTAE for 3.28 Mirage League
+  - restore function fixed (no longer corrupted game files)
+  - zoomout currently not functional (fixed in time)
+
 8.8
   - bug fixes - ty for the reports
 
