@@ -1,4 +1,4 @@
-﻿8.9
+﻿9.0
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,10 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+9.0
+  - zoomout fixed for 3.28 Mirage
+  - thanks a lot for the patience
+
 8.9
   - MEMORY UPDATE for 3.28 Mirage League
     - Autopot and Script Engine working like before
