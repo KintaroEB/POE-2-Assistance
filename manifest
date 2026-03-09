@@ -1,4 +1,4 @@
-﻿9.1
+﻿9.2
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,13 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+9.2
+  - remove delirium fog fixed
+  - remove monster corpses fixed
+  
+9.1
+  - experimental testing
+
 9.0
   - zoomout fixed for 3.28 Mirage
   - thanks a lot for the patience
