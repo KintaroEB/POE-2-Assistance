@@ -1,4 +1,4 @@
-﻿9.2
+﻿9.3
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,18 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+9.3
+  - added Custom Thread 3 and 4
+    - thanks for the feedback
+  - fixed an issue while patching game files
+  - fixed an issue with WIN11 26H1 (28000)
+  - improved patching speed
+  - removed some AV false positive by changing real-time compiler method
+  - further reduced CPU/GPU usage while using a GPPX "preset"
+  - added 6.0x and 8.0x zoomout to the default GGPX release
+    - i tried my best to solve texture and object pop-in with these <3
+  - adjusted some non-english language expressions
+
 9.2
   - remove delirium fog fixed
   - remove monster corpses fixed
