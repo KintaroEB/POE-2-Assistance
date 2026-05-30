@@ -9,6 +9,17 @@ min_updater_version=1.4
 #--- LINE 9
 Changelog
 
+9.6
+  - fixed _POEMEMORY for the script engine (ty for the detailed reports) <3
+  - added a backup source for the GGPX download in case we get rate-limited by GOOGLE
+  - fixed GGPX patching by ignoring missing files
+    - in theory this should avoid corrupted game files 9/10 times
+    - please keep your game files (Content.GGPK / Bundles2 Folder) as a backup if you don't want to download again
+  - improved initial atlas rendering speed when using atlas reveal feature
+
+9.5
+  - quick release for 0.5.0 league start
+
 9.4
   - added support for MTX swapping
     - POE1 added a bunch of skill MTX
