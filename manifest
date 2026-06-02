@@ -1,4 +1,4 @@
-﻿9.6
+﻿9.7
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,14 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+9.7
+  - fixed zoomout issues during campaign
+  - fixed and error with blackscreen crash
+  - finalized support for MTX swapping
+    - POE2 MTX: Armour Sets - Skill Effects - Portal Effects
+    - MTX swapping is ongoing -> new will be added over time
+  - fixed an issue on korean game client related to BUFFLIST
 
 9.6
   - fixed _POEMEMORY for the script engine (ty for the detailed reports) <3
