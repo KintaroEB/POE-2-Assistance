@@ -32,7 +32,7 @@ Changelog
   - added support for MTX swapping
     - POE1 added a bunch of skill MTX
     - POE2 soon
-  - added detailed error-reporting to 'error.txt' (root folder)
+  - added detailed error reporting to 'error.txt' (root folder)
   - adjusted UIX accordingly
   - fixed an issue with japanese game version for POE2
   - reduced VRAM usage on HyperV machines
