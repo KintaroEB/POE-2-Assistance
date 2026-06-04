@@ -1,4 +1,4 @@
-﻿9.7
+﻿2.0
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,13 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+2.0 (new cycle)
+  - fixed Town/Hideout detection for POE2
+  - added support for RADAR Overlay on POE2 (experimental)
+    - must be started when already in an active area
+    - renders only when minimap is opened
+    - works very well together with the minimap reveal
 
 9.7
   - fixed zoomout issues during campaign
