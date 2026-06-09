@@ -1,4 +1,4 @@
-﻿2.1
+﻿2.2
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,19 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+2.2
+  - fixed Overlay not showing monster dots in some cases
+  - fixed Overlay displaying friendly units as red dots
+  - fixed Overlay showing numerous invalid navmesh dots in some areas
+  - added a local WEB-SERVER for Overlay settings
+    - !RIGHT DOCK MENU! contains a button to open the webserver
+    - adjust Overlay settings without restarting the app
+    - adjust Overlay settings while in-game
+    - feature list is too long to list here - check the webserver for details
+    - this is an early version of the webserver - more features will be added over time
+  - changed method of resolving path of exile executable metadata
+    - this should resolve the infamous UAC access error
 
 2.1
   - added an option to reload threads
@@ -19,14 +32,14 @@ Changelog
     - this should significantly reduce the chances of corrupted game files due to patching errors
   - added GITHUB as the primary source for GGPX files
     - backup sources are still in place and will be used if the GITHUB source is unavailable
-  - fixed an issue with lingering monster dots on RADAR Overlay
-    - exposed setting to disable normal monster dots on RADAR Overlay for better visibility
-    - !RIGHT DOCK MENU! contains a toggle for showing normal monster dots on RADAR Overlay
-  - RADAR Overlay does not work with Controller Input (no ETA for support)
+  - fixed an issue with lingering monster dots on Overlay
+    - exposed setting to disable normal monster dots on Overlay for better visibility
+    - !RIGHT DOCK MENU! contains a toggle for showing normal monster dots on Overlay
+  - Overlay does not work with Controller Input (no ETA for support)
 
 2.0 (new cycle)
   - fixed Town/Hideout detection for POE2
-  - added support for RADAR Overlay on POE2 (experimental)
+  - added support for Overlay on POE2 (experimental)
     - must be started when already in an active area
     - renders only when minimap is opened
     - works very well together with the minimap reveal
@@ -416,7 +429,7 @@ Changelog
 - fixed an issue where charged staff key could be spammed
 
 3.8
-- updated chinese translations with help of a native (éžå¸¸æ„Ÿè°¢ä½ !)
+- updated chinese translations with help of a native
 - added buff based pointers
 	- power charge
 	- frenzy charge
