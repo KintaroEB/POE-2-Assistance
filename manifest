@@ -1,4 +1,4 @@
-﻿2.2
+﻿2.3
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,11 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+2.3
+  - added navmesh force hide option
+    - forgotten on 2.2...
+    - a click on the live data list now works correctly
 
 2.2
   - fixed Overlay not showing monster dots in some cases
