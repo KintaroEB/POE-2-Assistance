@@ -1,4 +1,4 @@
-﻿2.3
+﻿2.4
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,49 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+2.4
+  - fixed minor UI issues
+  - disabled overlay rendering in town/hideout
+  - overlay hotkeys fire only when poe2 is the active window
+    - F9 still fires globally to close the overlay
+  - adjusted api server UI to scale bigger and would still fit 1080p
+  - added shape choice for each entity or navmesh
+  - added elevation z-correction on all _POEMEMORY entries
+    - position now matches the minimap location while moving up or down stairs
+    - entities live in 3D — this offsets each dot by its height - dots on stairs/ledges stay correct
+  - added minimap shift x-y-correcttion on all _POEMEMORY entries
+    - minimap pan match correction -> 0.8 is pretty accurate for most users
+  - added SESSION STATS backend data to api server
+    - this shows some stats while you are in a map/act/not-town
+  - added force show navmesh detailed visual settings
+    - same as for entities now
+  - added sound alert for force show entities and navmesh
+    - added a global volume setting
+    - range condition on entities / no need for navmesh infinite range detection
+  - added ATLAS NODE search and filter feature
+    - you can now search and track atlas nodes across full generated range
+    - decide if map name OR tag should be searched OR both!
+    - decide on color + size + offscreen indicator
+    - reveals also hidden nodes attributes (experimental)
+    - hit indicator like visual clue were to scroll to
+    - exposed json list entries and edit in the api server
+  - changed force show rules behavior
+    - most top one overrides any upcoming match
+    - added ordering arrows to force show lists
+  - added configurable hotkeys in the api server UI
+    - it's like you know in video games
+    - bind key -> wait for next input -> saves it
+    - added backend arming for hotkeys to solve issues while holding down the key
+  - added a RULE INSPECTOR to LIVE DATA
+    - you can check why this entry is visible
+  - added a FULL CONFIG -> RESTORE / BACKUP feature
+    - this way full configurations can be shared or secured
+  - added profiles to live / instalty switch
+    - campaign / mapping / minimal / whatever you like
+  - added shadowed-rule warnings
+    - webinterface shows if a rule is "shadowed" by an former entry and rendered 'useless'
+  - added VM obfuscation and an encryption layer over the virtualized bytecode
+  - <3 <3 <3
 
 2.3
   - added navmesh force hide option
