@@ -1,4 +1,4 @@
-﻿2.4
+﻿2.5
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,11 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+2.5
+  - added GGPXviewer for proper GGPX file choosing and loading
+    - finally sorry ^^
+  - 
+
 2.4
   - fixed minor UI issues
   - disabled overlay rendering in town/hideout
