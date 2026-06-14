@@ -2,7 +2,7 @@
   "format": "poe2radar-overlay-config",
   "version": 1,
   "name": null,
-  "exportedUtc": "2026-06-14T20:15:49.7615130Z",
+  "exportedUtc": "2026-06-14T20:41:01.5936084Z",
   "files": {
     "overlay_settings.json": {
       "general": {
