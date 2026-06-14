@@ -1,1 +1,17 @@
-{}
+{
+  "format": "overlay-community-index",
+  "version": 1,
+  "updatedUtc": "2026-06-14T19:03:18Z",
+  "entries": [
+    {
+      "id": "settings-complete",
+      "file": "community/settings_complete/complete_community_14062026.json",
+      "name": "Complete community settings",
+      "author": "Kintaro",
+      "description": "Full config: force-show/hide rules, rare-mod watcher, atlas nodes.",
+      "type": "full",
+      "version": 1,
+      "updatedUtc": "2026-06-14T19:03:18Z"
+    }
+  ]
+}

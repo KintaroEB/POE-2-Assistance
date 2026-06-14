@@ -1,0 +1,1159 @@
+{
+  "format": "poe2radar-overlay-config",
+  "version": 1,
+  "name": null,
+  "exportedUtc": "2026-06-14T20:15:49.7615130Z",
+  "files": {
+    "overlay_settings.json": {
+      "general": {
+        "fpsCap": 60,
+        "resolveNavmeshPoe2db": true,
+        "elevationZCorrection": true,
+        "shiftPanScale": 0.8,
+        "alertVolume": 80,
+        "alertSound": 0
+      },
+      "hotkeys": {
+        "terminateApp": 120,
+        "openDashboard": 121,
+        "dumpEntities": 122,
+        "toggleOverlay": 123
+      },
+      "hpBars": {
+        "normal": false,
+        "magic": true,
+        "rare": true,
+        "unique": true,
+        "height": 5,
+        "offsetX": 0,
+        "offsetY": -25,
+        "widthNormal": 30,
+        "widthMagic": 40,
+        "widthRare": 40,
+        "widthUnique": 60
+      },
+      "styles": {
+        "monsterNormal": {
+          "enabled": true,
+          "shape": "Circle",
+          "color": "#FF3333",
+          "opacity": 1,
+          "size": 3,
+          "showLabel": false
+        },
+        "monsterMagic": {
+          "enabled": true,
+          "shape": "Circle",
+          "color": "#63acff",
+          "opacity": 1,
+          "size": 4,
+          "showLabel": false
+        },
+        "monsterRare": {
+          "enabled": true,
+          "shape": "Triangle",
+          "color": "#ffdf53",
+          "opacity": 1,
+          "size": 6,
+          "showLabel": false
+        },
+        "monsterUnique": {
+          "enabled": true,
+          "shape": "Diamond",
+          "color": "#f05800",
+          "opacity": 1,
+          "size": 7,
+          "showLabel": false
+        },
+        "player": {
+          "enabled": false,
+          "shape": "Circle",
+          "color": "#63acff",
+          "opacity": 1,
+          "size": 3,
+          "showLabel": false
+        },
+        "npc": {
+          "enabled": true,
+          "shape": "Square",
+          "color": "#ffdf53",
+          "opacity": 1,
+          "size": 4,
+          "showLabel": true
+        },
+        "chestRare": {
+          "enabled": true,
+          "shape": "Square",
+          "color": "#ffdf53",
+          "opacity": 1,
+          "size": 4,
+          "showLabel": false
+        },
+        "chestUnique": {
+          "enabled": true,
+          "shape": "Square",
+          "color": "#f05800",
+          "opacity": 1,
+          "size": 5,
+          "showLabel": false
+        },
+        "transition": {
+          "enabled": true,
+          "shape": "Square",
+          "color": "#be00af",
+          "opacity": 1,
+          "size": 5,
+          "showLabel": false
+        },
+        "poi": {
+          "enabled": true,
+          "shape": "Circle",
+          "color": "#be00af",
+          "opacity": 1,
+          "size": 3,
+          "showLabel": false
+        },
+        "landmark": {
+          "enabled": true,
+          "shape": "Square",
+          "color": "#be00af",
+          "opacity": 1,
+          "size": 5,
+          "showLabel": false
+        }
+      },
+      "override": [
+        {
+          "enabled": true,
+          "name": "Ritual",
+          "match": [
+            "Ritual"
+          ],
+          "categories": [],
+          "shape": "Star",
+          "color": "#00a300",
+          "opacity": 1,
+          "size": 4,
+          "showLabel": false
+        },
+        {
+          "enabled": true,
+          "name": "Breach",
+          "match": [
+            "Breach"
+          ],
+          "categories": [],
+          "shape": "Star",
+          "color": "#00a300",
+          "opacity": 1,
+          "size": 4,
+          "showLabel": false
+        },
+        {
+          "enabled": true,
+          "name": "Strongbox",
+          "match": [
+            "StrongBoxes"
+          ],
+          "categories": [
+            "Chest"
+          ],
+          "shape": "Star",
+          "color": "#00a300",
+          "opacity": 1,
+          "size": 4,
+          "showLabel": false
+        },
+        {
+          "enabled": true,
+          "name": "Essence",
+          "match": [
+            "Essence"
+          ],
+          "categories": [],
+          "shape": "Star",
+          "color": "#00a300",
+          "opacity": 1,
+          "size": 4,
+          "showLabel": false
+        }
+      ],
+      "hitIndicator": {
+        "enabled": true,
+        "ringRadius": 80,
+        "ringThickness": 3,
+        "arcMinDeg": 15,
+        "arcMaxDeg": 50,
+        "distanceFarGrid": 150,
+        "centerOffsetX": 0,
+        "centerOffsetY": -70,
+        "enabledMagic": true,
+        "enabledRare": true,
+        "enabledUnique": true,
+        "colorMagic": "",
+        "colorRare": "",
+        "colorUnique": "",
+        "opacityMagic": 0.6,
+        "opacityRare": 0.8,
+        "opacityUnique": 1
+      }
+    },
+    "entity_filters.json": {
+      "hide": [
+        "Metadata/MiscellaneousObjects/HideoutDoodad",
+        "Metadata/Terrain/Leagues/Ritual/RitualRuneObject",
+        "Metadata/Monsters/BeyondDemons/BeyondPortal1",
+        "Metadata/Terrain/Gallows/Leagues/Incursion/Objects/TemplePortal",
+        "Metadata/Monsters/LeagueIncursionNew/ViperLegionnaire/ViperLegionnaireShieldIncursion_@80",
+        "Metadata/Effects/Spells/ground_effects/VisibleServerGroundEffect",
+        "Metadata/Terrain/Gallows/Act1/1_7/Objects/GraveyardArenaDoor",
+        "Metadata/NPC/League/Kalguur/SettlerPeasants/Tavern/Objects/Loop_sitting_*",
+        "Metadata/QuestObjects/Four_Act2/Gates_*",
+        "Metadata/*/Four_Act2/WaterGoddess*",
+        "Metadata/QuestObjects/Four_Act2/TitanValley_*",
+        "Metadata/Terrain/Gallows/Act3/3_2_2/Objects/WaterLevelLeverL?",
+        "Metadata/Monsters/Pirates/objects/GunpowderLines",
+        "Metadata/Monsters/Pirates/objects/BarrelForPickup",
+        "Metadata/Monsters/Pirates/CampExplosion@*",
+        "Metadata/Monsters/Pirates/objects/BarrelPlacedSecondary",
+        "Metadata/Monsters/Pirates/objects/BarrelPlaced",
+        "AbyssCrack"
+      ],
+      "force": [
+        {
+          "show": true,
+          "metadata": "MiscellaneousObjects/Waypoint",
+          "text": "Waypoint",
+          "color": "#00ffff",
+          "shape": "Square",
+          "size": 7,
+          "opacity": 1,
+          "alert": false,
+          "alertRange": 0
+        },
+        {
+          "show": true,
+          "metadata": "MiscellaneousObjects/Checkpoint",
+          "text": "Checkpoint",
+          "color": "#00ccff",
+          "shape": "Square",
+          "size": 7,
+          "opacity": 1,
+          "alert": false,
+          "alertRange": 0
+        },
+        {
+          "show": true,
+          "metadata": "MiscellaneousObjects/AreaTransition",
+          "text": "Entrance",
+          "color": "#66ff99",
+          "shape": "Square",
+          "size": 7,
+          "opacity": 1,
+          "alert": false,
+          "alertRange": 0
+        },
+        {
+          "show": true,
+          "metadata": "QuestChests",
+          "text": "Quest Chest",
+          "color": "#ff9900",
+          "shape": "Square",
+          "size": 7,
+          "opacity": 1,
+          "alert": false,
+          "alertRange": 0
+        },
+        {
+          "show": true,
+          "metadata": "QuestObjects",
+          "text": "Quest Object",
+          "color": "#ffff00",
+          "shape": "Square",
+          "size": 7,
+          "opacity": 1,
+          "alert": false,
+          "alertRange": 0
+        },
+        {
+          "show": true,
+          "metadata": "Monsters/NPC/",
+          "text": "NPC",
+          "color": "#ffdd33",
+          "shape": "Square",
+          "size": 7,
+          "opacity": 1,
+          "alert": false,
+          "alertRange": 0
+        },
+        {
+          "show": true,
+          "metadata": "Shrine",
+          "text": "Shrine",
+          "color": "#99ff99",
+          "shape": "Square",
+          "size": 7,
+          "opacity": 1,
+          "alert": false,
+          "alertRange": 0
+        },
+        {
+          "show": true,
+          "metadata": "LeagueRitual",
+          "text": "Ritual",
+          "color": "#ff3333",
+          "shape": "Square",
+          "size": 7,
+          "opacity": 1,
+          "alert": false,
+          "alertRange": 0
+        },
+        {
+          "show": true,
+          "metadata": "Expedition2/Expedition2Encounter",
+          "text": "Runeshape",
+          "color": "#cc8833",
+          "shape": "Square",
+          "size": 7,
+          "opacity": 1,
+          "alert": false,
+          "alertRange": 0
+        },
+        {
+          "show": true,
+          "metadata": "AbyssJumpInteractable",
+          "text": "Abyss Jump",
+          "color": "#33cccc",
+          "shape": "Square",
+          "size": 7,
+          "opacity": 1,
+          "alert": false,
+          "alertRange": 0
+        },
+        {
+          "show": true,
+          "metadata": "Brequel/BrequelInitiator",
+          "text": "Breach",
+          "color": "#8000FF",
+          "shape": "Gem",
+          "size": 7,
+          "opacity": 1,
+          "alert": false,
+          "alertRange": 0
+        }
+      ],
+      "showNavmesh": [
+        {
+          "pattern": "Metadata/Terrain/Maps/SpiderWoods/Tiles/PlantBoss_02.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceWood.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceVaalInterior.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Gallows/Leagues/StoneCircle/Tiles/StoneCircle_02.tdt",
+          "text": "Runed Monolith",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Square",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/SunTemple/ZigguratArena_Flip.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceMudBurrow.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceBase.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Hive/Tiles/HiveArena_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/SunTemple/ZigguratArena.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceMarakethKhari.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceSunkenRuins.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Rupture/Tiles/arena_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Ravine/Tiles/RavineArena.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Gallows/Leagues/StoneCircle/Tiles/StoneCircle_03.tdt",
+          "text": "Runed Monolith",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Square",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/WaywardIsle/Tiles/BossArena_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Stronghold/Tiles/OceanEdge/StrongholdArena_02.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Woods/GrimTangle/feature/BossArena_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/GothicCity/Tiles/TombBoss_ArenaFloor.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/UberCount/Tiles/Features/ArenaBottom_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Flotsam/Tiles/Features/BossArena_02.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Sanctuary/Tiles/BossRoomTile.tdt",
+          "text": "Boss Area",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Expedition/Tiles/CampaignRunes/GrimTangle_Runestones.tdt",
+          "text": "Runestones (Grim Tangle)",
+          "enabled": true,
+          "color": "#FFFF00",
+          "shape": "Plus",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Expedition/Tiles/CampaignRunes/HuntingGrounds_Runestones.tdt",
+          "text": "Runestones (Hunting Grounds)",
+          "enabled": true,
+          "color": "#FFFF00",
+          "shape": "Plus",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Expedition/Tiles/CampaignRunes/Farmlands_Runestones.tdt",
+          "text": "Runestones (Farmlands)",
+          "enabled": true,
+          "color": "#FFFF00",
+          "shape": "Plus",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Expedition/Tiles/KalguurDungeon/Feature/UhtredDungeon_01.tdt",
+          "text": "Liquid Versisium (Runeseeker)",
+          "enabled": true,
+          "color": "#FFFF00",
+          "shape": "Plus",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Woods/Manor/Features/ArenaHoleMid_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Woods/Manor/Features/ArenaBottom_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Desert/Quarry/Features/MiningShaftCrane.tdt",
+          "text": "Mawdun Mine",
+          "enabled": true,
+          "color": "#BE00AF",
+          "shape": "Square",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Desert/Quarry/Features/MiningShaftFloor.tdt",
+          "text": "Mawdun Quarry",
+          "enabled": true,
+          "color": "#BE00AF",
+          "shape": "Square",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Desert/KethAscendancy/Level_1/Feature/arena_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Desert/KethAscendancy/Level_4/Features/Arena_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Desert/FarudinCarts/Features/DreadnoughtArena.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Jungle/JungleExterior/Feature/Jungle_WaterwayAltar_01.tdt",
+          "text": "Quest Altar (Jungle)",
+          "enabled": true,
+          "color": "#FFFF00",
+          "shape": "Plus",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceJungleDepths.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceInfestedBarrens.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceCarverBog.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Dungeon/TreasureVault/BossChannel_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Dungeon/Ziggurat/ZigguratArena/ZigguratArena.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Islands/Tiles/Prison/Features/LowerPrison/PrisonerArena01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Derelict/Tiles/Holton_Bossroom.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Interlude/Part2/P2_1/Dregs_Transition.tdt",
+          "text": "Pools of Khatal",
+          "enabled": true,
+          "color": "#BE00AF",
+          "shape": "Square",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceVillage.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Epitaph/Tiles/Feature/TombBoss_ArenaFloor.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Islands/Tiles/Island/Volcano/Goblins/Features/GoblinTownArena_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Reservoir/Tiles/Reservoir_boss.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Islands/Tiles/TwilightIsland/PrecursorRuins/Arena/BossArena_Forge_PCR_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Steppe/Tiles/SteppeArena03.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Islands/Tiles/CoralDungeon/Thickwall/CoralSinkhole/Arena/YamaArena_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/RockPools/Tiles/BossArena_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Greenhouse/Tiles/Greenhouse_Arena_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Interlude/Part1/P1_5/Holten_Prison_Bossroom.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Plantation/Tiles/Plantaton_Boss_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Expedition/Tiles/KalguurDungeon/Feature/MedvedDungeon_01.tdt",
+          "text": "Runeseeker (Quest End)",
+          "enabled": true,
+          "color": "#BE00AF",
+          "shape": "Square",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Islands/Tiles/TropicalIsland/Features/Shark_Arena_02.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Port/Tiles/Port_Boss_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/SteamingSprings/Tiles/SteamingSprings_boss_01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Seepage/Tiles/SeepageArenaCenter.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Interlude/Part3/P3_3/GlacialTarn_Bossroom.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceSandsweptMarsh.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Desert/Oasis/Features/OasisArena01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceKedgeBay.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceGraveyard.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Necropolis/Tiles/Boss_ArenaFloor.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceMaraketh.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/UniqueReactor_01/Tiles/ReactorArena_01.tdt",
+          "text": "\u002B1 Passiv Skill Point",
+          "enabled": true,
+          "color": "#BE00AF",
+          "shape": "Square",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Interlude/Part3/P3_4/Cave_Bossroom.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Maps/Cenotes/Tiles/CenotesArena01.tdt",
+          "text": "Boss Arena",
+          "enabled": true,
+          "color": "#FF0000",
+          "shape": "Pentagon",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        },
+        {
+          "pattern": "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceTwilightIsland.tdt",
+          "text": "Temple",
+          "enabled": true,
+          "color": "#FF8000",
+          "shape": "Triangle",
+          "size": 5,
+          "opacity": 1,
+          "alert": false
+        }
+      ],
+      "hideNavmesh": [
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceUtzaal.tdt",
+        "Metadata/Terrain/Gallows/Leagues/StoneCircle/Tiles/StoneCircle_01.tdt",
+        "Metadata/Terrain/Interlude/Part2/P2_3/Closed_Vault_Door_St_01.tdt",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Waygates/WaygateDeviceHubEntrance.tdt",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/IncursionHub_Present_01.tdt",
+        "Metadata/Terrain/Gallows/EndGame/DeliriumPinnacle/Tiles/Outer_Fill.tdt",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/ledge_pillar_cc_01.tdt",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Thick_45_Wall_Cv_01.tdt",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Large_Thick_45_Wall_Cc_01.tdt",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/FloorVent_02.tdt",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Smithy/ForgeLevel2_01.tdt",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/BrutalTallThick_StPillar_01.tdt",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Incursion_Interior_Entrance.tdt",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/ThickWall_CcCurveThinWall_01.tdt",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/VaultDoor_01.tdt",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/GolemWorks/GolemWorks_Arena_01.tdt",
+        "Metadata/Terrain/Maps/WaywardIsle/Tiles/ShoreLine_ArenaEntrance_01.tdt",
+        "Metadata/Terrain/Maps/Flotsam/Tiles/Features/Boss_entrance_01.tdt",
+        "Metadata/Terrain/Gallows/Act1/1_1/GroundTypes/uniquetile_groundtype_split.tdt",
+        "Metadata/Terrain/Woods/RedvaleWoods/TMO_Dupe/CvMM_02_waypoint.tdt",
+        "Metadata/Terrain/Woods/Graveyard/WalkwayTrim/walkway_Cc_waypoint.tdt",
+        "Metadata/Terrain/Woods/Graveyard/Feature/walkway_St_thinwall_BossGate_01.tdt",
+        "Metadata/Terrain/Woods/GraveyardDungeons/Transitions/Transition_Tomb_to_Graveyard_01.tdt",
+        "Metadata/Terrain/Woods/GraveyardDungeons/Transitions/Mausoleum_SecretEntrance_01.tdt",
+        "Metadata/Terrain/Woods/GraveyardDungeons/Feature/Tomb_Landmark_01.tdt",
+        "Metadata/Terrain/Leagues/Expedition/Tiles/KalguurDungeon/Roots/Feature/Thick_ST_FakeDoor_01.tdt",
+        "Metadata/Terrain/Woods/Manor/Interior/Features/Manor_Entrance_01.tdt",
+        "Metadata/Terrain/Desert/Maraketh/Features/Goddess_Altar_01.tdt",
+        "Metadata/Terrain/Gallows/Act2/2_8/Rooms/G2_8_waypoint.tdt",
+        "Metadata/Terrain/Desert/FarudinCarts/Features/DreadnoughtArena_03.tdt",
+        "Metadata/Terrain/Desert/FarudinCarts/Dunes/Arena_fill_01.tdt",
+        "Metadata/Terrain/Jungle/JungleExterior/RuinedThinwall/JungleDepths_Cv_FootwallEnd_01.tdt",
+        "Metadata/Terrain/Dungeon/Machinarium/waypoint_machinarium.tdt",
+        "Metadata/Terrain/Dungeon/NextFeatures/dungeon_cave_v01_01.tdt",
+        "Metadata/Terrain/Dungeon/NextStairs/dungeon_stairs_straight_v01_01.tdt",
+        "Metadata/Terrain/Dungeon/TreasureVault/BossChannelEnd_01.tdt",
+        "Metadata/Terrain/Jungle/Aggorat/Features/Present/Aggorat_AtziriAltar_01.tdt",
+        "Metadata/Terrain/Dungeon/DoryanisSanctum/Features/waypoint_doryani.tdt",
+        "Metadata/Terrain/Dungeon/DoryanisSanctum/Features/Doryani_GolemAltar_St_01.tdt",
+        "Metadata/Terrain/Islands/Tiles/CoralDungeon/Thickwall/CoralSinkhole/Arena/Halls_ArenaWall_01.tdt",
+        "Metadata/Terrain/Islands/Tiles/HallsOfTheDead/CaveWall/Halls_CaveWall_Hinekora_Door_01.tdt",
+        "Metadata/Terrain/Islands/Tiles/HallsOfTheDead/Features/Halls_Arena_Back_01.tdt",
+        "Metadata/Terrain/Islands/Tiles/Island/ShrikeIsland/ShrikeIslandArenaBridge.tdt",
+        "Metadata/Terrain/Islands/Tiles/CoralDungeon/Features/GoblinCaveArena/GoblinCaveArenaEntrance_02.tdt",
+        "Metadata/Terrain/Islands/Tiles/Island/KedgeBay/ShoreLine_ArenaEntrance_01.tdt",
+        "Metadata/Terrain/Islands/Tiles/Island/JourneysEnd/Boss_entrance_01.tdt",
+        "Metadata/Terrain/Leagues/Expedition/Tiles/KalguurDungeon/Feature/Pillar_01.tdt",
+        "Metadata/Terrain/Leagues/Expedition/Tiles/KalguurDungeon/Feature/OlrothRoundTable_01.tdt",
+        "Metadata/Terrain/Leagues/Expedition/Tiles/KalguurEntrance_fill_01.tdt",
+        "Metadata/Terrain/Islands/Tiles/Prison/Features/LowerPrison/Maximumprison.tdt",
+        "Metadata/Terrain/Maps/UniqueMegalith/Tiles/UniqueWildWood_06.tdt",
+        "Metadata/Terrain/Islands/Tiles/LoftySummit/Features/ShrikeIslandArenaBridge.tdt",
+        "Metadata/Terrain/Dungeon/TreasureVault/ThickwallCurveCcCv_02.tdt",
+        "Metadata/Terrain/Dungeon/TreasureVault/KnowledgeWingInnerEntrance01_01.tdt",
+        "Metadata/Terrain/Desert/Badlands/Features/RitualFeature_01.tdt",
+        "Metadata/Terrain/Dungeon/NextFeatures/VaalCorruptionAltar.tdt",
+        "Metadata/Terrain/Maps/Seepage/Tiles/NextFeatures/dungeon_altar_v01_01.tdt",
+        "Metadata/Terrain/Gallows/Leagues/Expedition/SubArea_BlackKnight_Boss/arena_black_knight.tdt",
+        "Metadata/Terrain/Maps/UniqueReactor_01/Tiles/Entrance_Lift_room_01.tdt",
+        "Metadata/Terrain/Woods/GraveyardDungeons/Feature/Mausoleum_Unique03_*",
+        "Metadata/Terrain/Woods/GraveyardDungeons/Feature/BitterAltar_0?_02.tdt",
+        "Metadata/Terrain/Maps/UniqueReactor_01/Tiles/ThickWall/*",
+        "Metadata/Terrain/Maps/UniqueReactor_01/Tiles/AbyssToBoss/*",
+        "Metadata/Terrain/Maps/UniqueReactor_01/Tiles/Abyss/*",
+        "Metadata/Terrain/Maps/UniqueReactor_01/Tiles/Reactor_*",
+        "Metadata/Terrain/Maps/UniqueReactor_01/Tiles/boss_*",
+        "Metadata/Terrain/Maps/UniqueMerchant_03/Raft/Skybox/Boatnaut_Skybox_fill_??_01.tdt",
+        "Metadata/Terrain/Maps/SteamingSprings/Tiles/Boss_Crater_*",
+        "Metadata/Terrain/Maps/Epitaph/Tiles/Feature/BitterAltarSon2_0?.tdt",
+        "Metadata/Terrain/Maps/Derelict/Tiles/HoltenBossStairs*",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/ThickWall/*",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Stairs/*",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Ledge/*",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Medallions/*",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Generator/*",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Corruption/*",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Viper_WadingPool_*",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Features/Abyss_*",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/BrutalistThinWall/*",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/BrutalistThickWall/*",
+        "Metadata/Terrain/Leagues/Incursion/Tiles/Abyss/*",
+        "Metadata/Terrain/Leagues/Expedition/Tiles/KalguurDungeon/Thick/*",
+        "Metadata/Terrain/Leagues/Expedition/Tiles/KalguurDungeon/Ledge/*",
+        "Metadata/Terrain/Leagues/Expedition/Tiles/KalguurDungeon/GroundSeals/*",
+        "Metadata/Terrain/Leagues/Expedition/Tiles/KalguurDungeon/Feature/Thick_ST_*Door_*",
+        "Metadata/Terrain/Leagues/Expedition/Tiles/KalguurDungeon/Feature/Act*",
+        "Metadata/Terrain/Leagues/Expedition/Tiles/KalguurDungeon/Abyss/*",
+        "Metadata/Terrain/Jungle/TreasureVault/*",
+        "Metadata/Terrain/Jungle/JungleExterior/Feature/Jungle_ToWaterway_Boss*",
+        "Metadata/Terrain/Jungle/Aggorat/Features/Present/Aggorat_SacrificialAltar_0?.tdt",
+        "Metadata/Terrain/Jungle/Aggorat/Features/Aggorat_SacrificialAltar_0?.tdt",
+        "Metadata/Terrain/Interlude/Part3/P3_7/VaultThickDownscreenNoChestSt_*",
+        "Metadata/Terrain/Interlude/Part3/P3_7/VaultThickChestSt_*",
+        "Metadata/Terrain/Interlude/Part2/P2_3/Vault_wall_feature_0?.tdt",
+        "Metadata/Terrain/Gallows/Leagues/Abyss/AbyssHub/Tiles/*",
+        "Metadata/Terrain/Gallows/Leagues/Abyss/AbyssalCity/Tiles/*",
+        "Metadata/Terrain/Gallows/EndGame/DeliriumPinnacle/Tiles/Mind_Void_*",
+        "Metadata/Terrain/Dungeon/TreasureVault/RearChannel/*",
+        "Metadata/Terrain/Dungeon/TreasureVault/GoldChannel*",
+        "Metadata/Terrain/Dungeon/TreasureVault/Archives*",
+        "Metadata/Terrain/Dungeon/NextFeatures/dungeon_altar_v0?_01.tdt",
+        "Metadata/Terrain/Desert/Quarry/Features/JamanraRitualSite_0?.tdt",
+        "Metadata/Terrain/Desert/Maraketh/Arena/*",
+        "Metadata/Terrain/Desert/KethAscendancy/WatcherCitadel/Walkway/Walkway_*_treasure.tdt",
+        "Metadata/Terrain/Desert/KethAscendancy/Level_1/BuriedCity/BuriedCity_Treasure*"
+      ]
+    },
+    "atlas_settings.json": {
+      "atlasNodePatterns": [
+        {
+          "pattern": "citadel",
+          "color": "#3CDCFF",
+          "markerSize": 20,
+          "offscreenIndicator": true,
+          "matchTarget": "mapName"
+        }
+      ],
+      "drawOffsetX": 0,
+      "drawOffsetY": 0,
+      "drawVisited": false,
+      "drawRange": 0
+    },
+    "rare_monster_mods.json": {
+      "discovered": [
+        "MonsterNoDropsOrExperience"
+      ],
+      "manual": [
+        "amanamu"
+      ]
+    }
+  }
+}
