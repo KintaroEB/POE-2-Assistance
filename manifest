@@ -1,4 +1,4 @@
-﻿2.5
+﻿2.6
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,47 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+2.6
+- ASSISTANT
+  - adjusted _POEMEMORY.BUFFLIST readings to catch crazy op builds as well ^^
+- OVERLAY
+  - added hp bar caching and increased position polling speed
+    - this way health bars appear smoother in higher density scenarious
+    - "_always show enemy hp" via assistant is the better choice really!
+  - added a "max draw range" to ATLAS NODES in the webserver
+      - 0 -> infinite / otherwise "tiles" from your current viewpoint (not position in atlas)
+  - added "LIVE ATLAS" section where you can see your current nodes
+      - all available details are exposed
+      - mouseover on a map ingame puts the node on top of the list and marks it orange
+      - this way can inspect nodes and see internal data to compare your filter/rules against
+  - added ATLAS DUMP into a TXT on the set DUMP key for better data view
+- GGPX VIEWER
+  - fixed list EXPORT / IMPORT
+  - fixed install path detection
+  - fixed an issue where loading is possible at no path set yet
+  - added POE running detection just for good measure
+  - added UI protection for loading on failed conditions
+  - added visual COLOR guidance on possible errors <3
+  - added visual TOAST for certain actions
+  - added double list entries detection (no longer possible)
+  - added.GGPX exceptions to prevent loading errors
+  - increased patching speed by 2x for smaller files
+- OVERLAY
+  - added RARE MOD WATCHER on the api server <3
+    - range is only limited to the current entity memory max distance exposure
+    - sadly no database on current available monster mods
+    - overlay tracks all rare monster mods and exposes them on the api server
+    - you can click and add it to the "watch list"
+    - only a perfect match works (you want 3 mods -> then on only this exact combination is being looked for)
+    - mod names are internal names
+      - "MonsterIncreasedSpeed1" -> obviosuly HASTED
+  - added full DEFAULT restore option
+  - added import / export functionality for rare monster mod watcher
+  - added PUBLIC REPO for community full settings import
+    - api server COMMUNITY navigation point lists published settings (full or partially)
+    - a current settings BACKUP (locally) is happening before applying of cosue
+
 2.5
   - added GGPXviewer for proper GGPX file choosing and loading
     - search function is also there
