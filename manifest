@@ -1,4 +1,4 @@
-﻿2.6
+﻿2.7
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,14 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+2.7
+  - (confirmed working - false report) fixing rare mod watch rules not being saved
+  - fixed overlay cannot be started again
+    - the dead overlay process will terminate now properly if poe2 closes
+  - added hp bar smoothing which should resolve most of the jitter on big monster packs
+  - WORLD and RENDER pass are now seperate in CODE
+    - resolves render spikes on lower end systems
 
 2.6
 - ASSISTANT
