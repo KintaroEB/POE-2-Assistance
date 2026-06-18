@@ -15,7 +15,7 @@ Changelog
     - the dead overlay process will terminate now properly if poe2 closes
   - added hp bar smoothing which should resolve most of the jitter on big monster packs
   - WORLD and RENDER pass are now seperate in CODE
-    - resolves render spikes on lower end systems
+    - resolves render spikes on lower end systems _
 
 2.6
 - ASSISTANT
