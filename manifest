@@ -9,6 +9,18 @@ min_updater_version=1.4
 #--- LINE 9
 Changelog
 
+2.8 IN DEVELOPMENT
+  - RARE mod watcher marked on minimap
+    - optional sound alert
+  - RARE mod watcher shows live the closest monster by NAME
+    - and the full monster affix list
+    - no more guessing of the big list <3
+  - ATLAS NODE can now look for the UI name and no longer internal name
+    - no more guessing of the "real" name <3
+  - ATLAS NODE can now mark by BIOME
+    - do not forget to swap the matching type for that marker ;-)
+    - it will autoswap if you type it exact to help <3
+
 2.7
   - (confirmed working - false report) fixing rare mod watch rules not being saved
   - fixed overlay cannot be started again
