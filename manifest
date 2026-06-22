@@ -1,4 +1,4 @@
-﻿2.8
+﻿2.9
 updater_true
 min_updater_version=1.4
 
@@ -9,7 +9,13 @@ min_updater_version=1.4
 #--- LINE 9
 Changelog
 
-2.8 IN DEVELOPMENT
+2.9
+  - ATLAS NODE can be toggled on/off now
+  - GGPX EDITOR Light and Medium Preset fixed
+    - those removed too many effects across player and monster effects
+  - PRESETS can now load backups automatically prior of running itself
+
+2.8
   - RARE mod watcher marked on minimap
     - optional sound alert
   - RARE mod watcher shows live the closest monster by NAME
