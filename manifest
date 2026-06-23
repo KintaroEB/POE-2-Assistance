@@ -1,4 +1,4 @@
-﻿2.9
+﻿3.0
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,34 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+3.0
+  - OVERLAY
+    - RARE MODS WATCHER can now look for...
+      - ... monster NAME (partially and "case-insensitive" allowed)
+      - ruleset "count" like POE TRADE website (you know what i mean)
+      - <3
+
+  - GGPX EDITOR
+    - minor UI fixes
+    - UI points out when the remote RESTORE changed so you know the true untouched has changed
+    - BACKUP/RESTORE is now pretty <3
+    - EXTRA TAB: +19 Protect/Disable bundles
+      - per-act & per-league monster VFX, affix tells, environment/ambient particles
+      - ailment & curse visuals, skill-group FX
+    - COLORED STATS
+      - self edit of ingame text through all available files
+      - self edit of each LANGUAGE text
+      - added import / export functionality
+    - added ALWAYS SHOW MONSTER HP BAR
+    - added REMOVE DEAD MONSTER AND CORPSES
+    - NEW BASIC toggles
+      - Always Show Monster HP Bar every monster shows its health bar
+      - Remove Monster Corpses bodies disappear shortly after death (no corpse pileups)
+      - Remove Shattering Ice Effect
+    - the window can now be MAXIMIZED (button + double-click the title bar)
+    - tidier BASIC tab (two toggles per row)
+    - ADVANCDED TAB — grouped by preset usage
 
 2.9
   - ATLAS NODE can be toggled on/off now
