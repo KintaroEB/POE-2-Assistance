@@ -1,4 +1,4 @@
-﻿3.0
+﻿3.1
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,16 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+3.1
+  - OVERLAY
+    - fixed internal STRUCT movement
+
+  - TRADE BOT
+    - RELEASE - like the instantbuy but better <3
+    - new addon needed
+    - all options in the TRADEBOT UI
+    - for multi livesearched -> NEW WINDOW! TABS do NOT work!
 
 3.0
   - OVERLAY
