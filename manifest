@@ -1,4 +1,4 @@
-﻿3.1
+﻿3.2
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,18 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+3.2 DEV
+  - TRADE BOT
+    - updated addon for single window refresh
+    - no more all window refresh!
+    - removed persistent refresh settings
+    - added a warning message for abusive usage
+  - EDITOR
+    - minor LOG OUTPUT fixes
+  - OVERLAY
+    - RARE MODS WATCHER is now "MONSTER MODS WATCHER"
+    - added support for UNIQUE monster tracking - same rule type/set
 
 3.1
   - OVERLAY
