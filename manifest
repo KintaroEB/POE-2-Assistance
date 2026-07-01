@@ -1,4 +1,4 @@
-﻿3.2
+﻿3.3
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,31 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+3.3
+  - EDITOR
+    - NEW "Official restore" option when applying presets (now the default): resets your game to the GGG default
+    - OFFICIAL restore online only! — fetches the official files from GGG's servers
+      - IF GGG's servers can't be reached, you'll get a clear prompt to use a Personal or Remote backup instead
+    - NEW ALERT: when a game update has reverted your edits, reminding you to re-apply your setup
+    - OFFICIAL patch means now safe to override with your wanted edits!
+      - corrupted game files should be the past now <3
+
+  - OVERLAY
+    - ATLAS content icons — map content (Breach, Map Boss, Essence, Ritual, Expedition, and more)
+      - now shows as icons right on the atlas map nodes; turn them on/off and adjust their size in the ATLAS NODES
+    - "Always, everywhere" mode — optionally shows content icons on every map visible on your atlas screen
+      - not just the ones you're tracking
+    - Declutter filters — new options to hide completed maps and maps you can already run
+      - so the overlay only highlights the maps you're heading toward (both on by default)
+    - Built-in map highlights — Citadels (yellow) and Unique maps (orange) are now highlighted automatically
+    - Content descriptions — hover a content tag in the ATLAS LIVE view to see what that mechanic actually does
+    - Smarter map recognition — atlas now reads real map names and types for more accurate tracking
+  - BUYBOT
+    - removed test button
+    - tablet purchase can be bugged - no solution yet / sorry <3
+    - added LEGACY MODE to be controlled via whatever you like
+      - no auto focus; no travel control; your choice how to trigger the travel
 
 3.2 DEV
   - TRADE BOT
