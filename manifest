@@ -1,4 +1,4 @@
-﻿3.3
+﻿3.4
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,9 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+3.4
+  - crash fix; sorry <3
 
 3.3
   - EDITOR
