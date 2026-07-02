@@ -1,4 +1,4 @@
-﻿3.4
+﻿3.5
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,10 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+3.5
+  - FULL CONTROLLER overlay support
+  - <3 <3 <3
 
 3.4
   - crash fix; sorry <3
