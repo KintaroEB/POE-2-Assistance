@@ -1,4 +1,4 @@
-﻿3.5
+﻿3.6
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,17 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+3.6 DEV
+  - BUYBOT
+    - removed 1440p support
+      - 720p + 1080p window mode only
+    - fixed the last accuracy issues
+    - 1x1 items like Precursor Tablets are now bought properly every time
+    - added back the click delay after loading time finishes
+      - 300 ms is default -> should be a good baseline really
+    - fixed HDR bug
+      - the game can now run at any graphical settings
 
 3.5
   - FULL CONTROLLER overlay support
