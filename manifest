@@ -1,4 +1,4 @@
-﻿3.6
+﻿3.7
 updater_true
 min_updater_version=1.4
 
@@ -9,7 +9,51 @@ min_updater_version=1.4
 #--- LINE 9
 Changelog
 
-3.6 DEV
+3.7
+  - OVERLAY
+    - added full POE1 support <3
+      - GAMEPAD support as well!
+    - added per zone EXPERIENCE tracker
+      - can be displayed above the experience bar in-game
+    - added TOAST alert feature on FORCE SHOW
+      - get a visual TOAST when your favorite beast shows up for example
+    - added PRELOAD feature
+      - POE + POE2 <3
+
+  - EDITOR
+    - removed remote backup
+    - removed basic restore
+    - official GGG restore is superior and seems to work flawlessly for everyone
+    - POE1 full support added <3
+    - added support for multiple personal restores (per game version / patch)
+
+  - VIRTUAL GAMEPAD
+    - removed reWASD dependency
+    - the controller KEY-Presses now work fully on their own
+    - BUT we need 'HidHide'
+    - this is the much much easier setup!
+    - and we can use proper BUTTON NAMES
+
+    _CTRL_KEYS := { DpadUp, DpadDown, DpadLeft, DpadRight
+                  , Triangle, Circle, Cross, Square
+                  , ButtonA, ButtonB, ButtonX, ButtonY
+                  , L1, R1, L2, R2
+                  , LB, RB, LT, RT
+                  , L3, R3, LS, RS
+                  , Share, Back, Options, Start
+                  , PS, Xbox, Guide }
+
+    - if you cannot be bothered switching
+      - the old "virtualGamepadPoe2.exe" will still work and is included in the release
+      - simply go into the dependencies folder and find/rename "_virtualGamepadPoe2.exe"
+
+    - TRADE BOT
+      - added support for POE1
+
+    - CLEANUP
+      - removed everything no longer needed/referenced
+
+3.6
   - BUYBOT
     - removed 1440p support
       - 720p + 1080p window mode only
