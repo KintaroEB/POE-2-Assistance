@@ -1,4 +1,4 @@
-﻿3.7
+﻿3.8
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,16 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+3.8
+  - OVERLAY
+    - added a search filter for the live listings in PRELOAD
+    - added a 'FOLLOW' marker for a specific character name
+      - COMMUNITY -> COMMUNITY / FOLLOWER
+      - it marks a PLAYER (matching by name / case-insensitive)
+      - draws a fully opaque colored square over the character
+      - i will not provide you a follow bot!
+      - this is the easiest way for you to 'follow' with a visual marker
 
 3.7
   - OVERLAY
