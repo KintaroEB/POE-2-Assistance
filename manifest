@@ -1,4 +1,4 @@
-﻿3.9
+﻿4.0
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,60 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+
+4.0
+
+  - POE1 MEMORY UPDATE
+
+  - OVERLAY
+    - MONSTER MOD WATCHER renamed to MONSTER WATCHER
+    - allows to track RARE + UNIQUE enemies without mods now as well
+
+  - EDITOR
+    - SEARCH OPTION for LOAD GGPX
+      - easier now to find your desired MTX to swap to
+    - added several ARMOUR SETS and PORTALS for POE1
+
+    - Armour Sets
+      - Arctic Set
+      - Automaton Lightning Set
+      - Automaton Necrolord Set
+      - Black Set
+      - Celestial Necrolord Set
+      - Darkshard Set
+      - Default Set
+      - Demon Parasite Set
+      - Direblade Set
+      - Divergence Set
+      - Dragon Set
+      - Emperor Set
+      - Eyrie Set
+      - Fire Set
+      - Fractured Dreamer Set
+      - Gargoyle Set
+      - Ghostflame Set
+      - Gloom Set
+      - Heartseeker Set
+      - Hellfire Set
+      - Nethermancer Set
+      - Nightfall Set
+      - Polar Set
+      - Transcendence Set
+      - Voidborne Set
+      - Vulcan Set
+      
+    - Portals
+      - Black Hole Portal
+      - Default Portal
+      - Demonking Portal
+      - Demonking Arcane Portal
+      - Demonking Divine Portal
+      - Demonking Necrotic Portal
+      - Dragon Hunter Portal
+      - Shaper Portal
+      - Siren Portal
+      - Spirit Portal
+      - Storm of Divinity Portal
 
 3.9
   - POE1 / POE2 memory update
