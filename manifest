@@ -1,4 +1,4 @@
-﻿4.0
+﻿4.1
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,9 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+4.1
+  - OVERLAY
+    - fixed the need for re-opening the minimap each new zone
 
 4.0
 
