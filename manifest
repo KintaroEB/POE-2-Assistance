@@ -1,4 +1,4 @@
-﻿4.1
+﻿4.2
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,25 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+4.2
+
+-- OVERLAY
+Dashboard UI Update — Tabs & Cleaner Lists
+
+Now split into tabs: Entities · Navmesh · Toast Settings — no more one endless scroll
+Each entry is a single row instead of a bulky 3-line block — on/off, color, shape, size, opacity, sound alert + range, and toast!
+You can now edit a rule's path directly — click it, type, done (saves instantly)
+Force Hide now has Entities · Navmesh tabs too.
+Force Show now has filter options by TEXT and SHAPES + slightly more ONE-LINER feeling
+
+Settings split into General · Icon Styles · Icon Overrides tabs.
+Small extras: wider name field, fixed a label typo, tidier spacing.
+
+Everything is backwards compatible — your existing configs work exactly as before.
+
+-- TradeBot
+MAX RUNTIME in Minutes added to the UI - leading limit if on!
+
 4.1
   - OVERLAY
     - fixed the need for re-opening the minimap each new zone
