@@ -1,4 +1,4 @@
-﻿4.2
+﻿4.3
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,13 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+4.3
+  - OVERLAY
+    - fixed LEGION monsters to be hidden before activation
+    - <3 ; thanks for the feedback!
+
+  - generally some minor UI fixes and wording corrections
+
 4.2
 
 -- OVERLAY
