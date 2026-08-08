@@ -1,4 +1,4 @@
-﻿4.3
+﻿4.4
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,12 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+4.4
+  - OVERLAY
+    - added UNIQUE ITEM groundloot tracker in FORCE SHOW
+    - get notified when a real HEADHUNTERS drops and ignore trash Leather Belts <3
+
+
 4.3
   - OVERLAY
     - fixed LEGION monsters to be hidden before activation
