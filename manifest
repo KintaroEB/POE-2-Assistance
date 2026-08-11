@@ -1,4 +1,4 @@
-﻿4.4
+﻿4.5
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,22 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+4.5
+  - EDITOR
+    - ADDED 8.0x and 10.0x zoomout on the slider END
+
+  - OVERLAY
+    - ADDED a METADATA WATCHER to MONSTER WATCHER to simply track monsters by METADATA tags as well
+      - Beasts would be a prime example; thanks for the feedback <3
+      - THREAT INDICATOR added
+    - FORCE SHOW Entities now also has the option to draw a rectangle on the screen
+      - this way you can track any ENTITY directly on the Screen and not only on the Minimap
+      - best example are "sunken chests" or "message in a bottle" - disappear when taken
+      - those rules are identical in "action" - usability wise a distinction in places to configure
+    - ATLAS NODES
+      - ADDED an exclusion option per rule <3
+      - adjusted the UIX options for the ruleset to be easier to navigate
+
 4.4
   - OVERLAY
     - added UNIQUE ITEM groundloot tracker in FORCE SHOW
