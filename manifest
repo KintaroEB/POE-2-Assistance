@@ -1,4 +1,4 @@
-﻿4.5
+﻿4.6
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,20 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+4.6
+  - OVERLAY
+    - ADDED a full Script-Engine to the Overlay
+    - CODING is being done one the local webserver
+    - LUA based code
+    - WORKS on the OVERLAY based POEMEMORY
+    - FULL DOCUMENTATION and Examples on the website
+      - https://poe2-autopot.com/scripting-api.html
+      - https://poe2-autopot.com/scripting-examples.html
+
+    - This is a first "sample" so to speak
+    - more additions to the MEMORY MODEL might come in the future
+    - FEEDBACK NEEDED! ^^
+
 4.5
   - EDITOR
     - ADDED 8.0x and 10.0x zoomout on the slider END
