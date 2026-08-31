@@ -1,4 +1,4 @@
-﻿4.6
+﻿4.7
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,13 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+4.7
+  - OVERLAY
+    - FIXED LUA ENGINE enemy markers for "hidden/dormant/inactive" Monsters
+    - LOG List has a scrollbar now ^^
+    - fixed the SAVED toast position in the Webserver
+    - minor UIX fixes as well - everything pretty now <3
+
 4.6
   - OVERLAY
     - ADDED a full Script-Engine to the Overlay
