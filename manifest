@@ -1,4 +1,4 @@
-﻿4.8
+﻿4.9
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,12 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+4.9
+  - MINOR bug fixes
+  
+4.8
+  - UPDATED for 0.5.5
+
 4.7
   - OVERLAY
     - FIXED LUA ENGINE enemy markers for "hidden/dormant/inactive" Monsters
