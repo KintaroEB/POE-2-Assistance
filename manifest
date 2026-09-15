@@ -1,4 +1,4 @@
-﻿4.9
+﻿5.0
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,29 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+5.0
+Scripting update — Player Buffs and Flask Inventory
+
+Lua scripts can now read your own buffs, on both PoE1 and PoE2.
+  -Player:HasBuff(id) — is it on me right now?
+  -Player:Charges(id)` — how many power / frenzy / endurance charges
+  -Player:BuffCount(id)` — for buffs that stack by repeating (leech, reservations)
+  -Player:BuffTimeLeft(id)` — seconds left
+  -Player:Buffs()` — print everything on you, to find the ids
+  -Player:Rage` — works on both games, even though they store rage differently
+  -Player:Flasks() - full flask inventory
+
+So you can finally script things like "I'm at 3 power charges" or "my buff just fell off".
+Still read-only — nothing is written to the game.
+
+The scripting API page and the examples page are updated, with copy-paste scripts for each.
+
+OTHER ADDITIONS
+  - TormentedSpirits can now be tracked via FORCE SHOW
+  - FIXED the unique item ground loot finder to find charms
+  - "BEAST" can now be chosen as a filter for a rule in MONSTER WATCHER
+  - <3
+
 4.9
   - MINOR bug fixes
   
