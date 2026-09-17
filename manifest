@@ -1,4 +1,4 @@
-﻿5.0
+﻿5.1
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,13 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+5.1
+  - added Trial of the Sekhemas to ZONE INFO
+  - There is no overlay on the room-selection window: the client never links a map node to a room.
+  - so nothing can say which node a room is. This is an inventory of what the floor contains, not a route.
+
+  - minor bug fixs along some UI improvements
+
 5.0
 Scripting update — Player Buffs and Flask Inventory
 
