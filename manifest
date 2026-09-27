@@ -1,4 +1,4 @@
-﻿5.1
+﻿5.2
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,10 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+5.2
+  - moved "Sekhemas Trial" to the main navigation menu
+  - added affliction marking to the overlay
+
 5.1
   - added Trial of the Sekhemas to ZONE INFO
   - There is no overlay on the room-selection window: the client never links a map node to a room.
