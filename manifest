@@ -1,4 +1,4 @@
-﻿5.2
+﻿5.3
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,57 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+5.3
+--- OVERLAY ---
+- "Sekhemas Trial"
+  - added TRIAL TYPE/NAME
+  - added REWARD
+- New dashboard page LIVE VISUAL (PoE2)
+    - every visual effect around you, updated live
+- Ground patches, skills, monsters, weather, scenery
+    - each with its state, like burning oil
+- Filters, including "monster related", and a search
+- Toggles: "hide gone", "hide already fully disabled"
+- Copies of one effect fold into one row
+    - "5 exact occurrences", colored green to red
+- FILES bar on each row: files you can add
+    - shows "7 left" or "added" for your project
+- FILES popup: the game files that draw an effect
+    - as a tree, addable files in color
+- Add files one by one, all at once, or by type
+- Mark a file to see it ringed in the game
+    - shows folder and name, up to 6 marks
+- Ring size slider, 4 to 24 px
+- "Seen this watch": every file seen in this area
+    - by count, with search, "added" column, hide toggle
+- "Current project" dropdown above the list
+- New tab CUSTOM VISUALS: your projects
+    - lists of game files the editor switches off
+- Create, rename, combine and delete projects
+- New tab PROTECTED: files that always stay on
+    - remove one, or wipe the whole list
+- "protect" and "protect all" in the FILES popup
+- Effect file list downloads only on your click
+    - from Cloudflare, with GitHub as backup
+- A newer list is offered, never forced
+- No extra load with the page closed and no marks
+- Dashboard tab icon
+--- EDITOR ---
+- New: a protect list, shared with the overlay
+    - files marked "protect" there always stay on
+- The overlay manages the list, the editor only reads it
+- Read again before every run
+- Protect wins over every list, folder entry and preset
+- Works in presets, BASIC and ADVANCED toggles, Disable Marked
+    - also in CUSTOM VISUALS, LOAD GGPX packs, launcher commands
+- Not used by restores, the TEST tab or CSD colors
+- No list = nothing protected
+- A broken list stops every run before anything changes
+    - plain message in the app, launcher commands end with an error
+- CUSTOM VISUALS shows a green line: how many files stay on
+    - or a warning while the list can't be read
+- The log says how many protected files stayed on
+
 5.2
   - moved "Sekhemas Trial" to the main navigation menu
   - added affliction marking to the overlay
