@@ -1,4 +1,4 @@
-﻿5.3
+﻿5.4
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,18 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+5.4
+--- EDITOR ---
+  - added the option to MUTE WARCRIES
+  - added the option to MUTE CHARACTER SHOUTS
+  - added the option to MUTE a CUSTOM VISUALS created project (fully optional)
+
+--- OVERLAY ---
+  - added MAPS PER HOUR and similar starts to "SESSTION STATS"
+  - added SEKHEMA TRIAL stats to "SESSTION STATS" in similar fashion
+  - added IMPORT / EXPORT functionality to "PROJECTS" in CUSTOM VISUALS
+  - added SOUNDLINKS to the effect index
+
 5.3
 --- OVERLAY ---
 - "Sekhemas Trial"
