@@ -1,4 +1,4 @@
-﻿5.4
+﻿5.5
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,19 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+5.5 IN DEVELOPMENT
+--- EDITOR ---
+  - internal update on the patching method
+
+--- OVERLAY ---
+  - added options to "add all" and "remove all" in LIVE VISUALS (popup and table)
+  - added "sound icons" to the list and table
+  - added overall file/sound COUNTER to the list ans table
+  - fixed an issue with SEKHEMA TRIAL room display
+    - thanks a lot for the detailed feedback ANONYMOUS
+  - added a "still hidden" table of not yet known rooms
+  - force show "additions" moved to the top <3 - ty for the nice chat 'Cattrel'
+
 5.4
 --- EDITOR ---
   - added the option to MUTE WARCRIES
