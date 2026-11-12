@@ -1,4 +1,4 @@
-﻿5.6
+﻿5.7
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,24 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+5.7
+--- ASSISTANT ---
+  - fixed game detection
+  - streamlined server memory between hotfixes
+  - streamlined taiwan memory match
+
+--- OVERLAY ---
+  - added support for LIVE VISUAL in POE1
+  - added support for PROJECTILE visulization
+
+--- EDITOR ---
+  - added support for CUSTOM VISUALS in POE1
+  - removed skill list because CUSTOM VISUALS let you target with 100% accuracy
+  - moved over some tabs which are kinda obsolete with a technical details note
+
+--- TRADEBOT ---
+  - updated for the upcoming patches POE1/POE2
+
 5.6
 --- ASSISTANT ---
   - GENERAL UPDATE
