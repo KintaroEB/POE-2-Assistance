@@ -1,4 +1,4 @@
-﻿5.8
+﻿5.9
 updater_true
 min_updater_version=1.4
 
@@ -8,10 +8,10 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
-5.8
+5.9
 --- ASSISTANT ---
-  - general update
-  
+  - general update and hotfix + 5.8++
+
 5.7
 --- ASSISTANT ---
   - fixed game detection
