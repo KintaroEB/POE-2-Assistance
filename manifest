@@ -1,0 +1,1151 @@
+﻿5.9
+updater_true
+min_updater_version=1.4
+
+
+
+
+
+#--- LINE 9
+Changelog
+5.9
+--- ASSISTANT ---
+  - general update and hotfix + 5.8++
+
+5.7
+--- ASSISTANT ---
+  - fixed game detection
+  - streamlined server memory between hotfixes
+  - streamlined taiwan memory match
+
+--- OVERLAY ---
+  - added support for LIVE VISUAL in POE1
+  - added support for PROJECTILE visulization
+
+--- EDITOR ---
+  - added support for CUSTOM VISUALS in POE1
+  - removed skill list because CUSTOM VISUALS let you target with 100% accuracy
+  - moved over some tabs which are kinda obsolete with a technical details note
+
+--- TRADEBOT ---
+  - updated for the upcoming patches POE1/POE2
+
+5.6
+--- ASSISTANT ---
+  - GENERAL UPDATE
+  - Cloudflare Test
+
+5.5
+--- EDITOR ---
+  - internal update on the patching method
+
+--- OVERLAY ---
+  - added options to "add all" and "remove all" in LIVE VISUALS (popup and table)
+  - added "sound icons" to the list and table
+  - added overall file/sound COUNTER to the list ans table
+  - fixed an issue with SEKHEMA TRIAL room display
+    - thanks a lot for the detailed feedback ANONYMOUS
+  - added a "still hidden" table of not yet known rooms
+  - force show "additions" moved to the top <3 - ty for the nice chat 'Cattrel'
+
+5.4
+--- EDITOR ---
+  - added the option to MUTE WARCRIES
+  - added the option to MUTE CHARACTER SHOUTS
+  - added the option to MUTE a CUSTOM VISUALS created project (fully optional)
+
+--- OVERLAY ---
+  - added MAPS PER HOUR and similar starts to "SESSTION STATS"
+  - added SEKHEMA TRIAL stats to "SESSTION STATS" in similar fashion
+  - added IMPORT / EXPORT functionality to "PROJECTS" in CUSTOM VISUALS
+  - added SOUNDLINKS to the effect index
+
+5.3
+--- OVERLAY ---
+- "Sekhemas Trial"
+  - added TRIAL TYPE/NAME
+  - added REWARD
+- New dashboard page LIVE VISUAL (PoE2)
+    - every visual effect around you, updated live
+- Ground patches, skills, monsters, weather, scenery
+    - each with its state, like burning oil
+- Filters, including "monster related", and a search
+- Toggles: "hide gone", "hide already fully disabled"
+- Copies of one effect fold into one row
+    - "5 exact occurrences", colored green to red
+- FILES bar on each row: files you can add
+    - shows "7 left" or "added" for your project
+- FILES popup: the game files that draw an effect
+    - as a tree, addable files in color
+- Add files one by one, all at once, or by type
+- Mark a file to see it ringed in the game
+    - shows folder and name, up to 6 marks
+- Ring size slider, 4 to 24 px
+- "Seen this watch": every file seen in this area
+    - by count, with search, "added" column, hide toggle
+- "Current project" dropdown above the list
+- New tab CUSTOM VISUALS: your projects
+    - lists of game files the editor switches off
+- Create, rename, combine and delete projects
+- New tab PROTECTED: files that always stay on
+    - remove one, or wipe the whole list
+- "protect" and "protect all" in the FILES popup
+- Effect file list downloads only on your click
+    - from Cloudflare, with GitHub as backup
+- A newer list is offered, never forced
+- No extra load with the page closed and no marks
+- Dashboard tab icon
+--- EDITOR ---
+- New: a protect list, shared with the overlay
+    - files marked "protect" there always stay on
+- The overlay manages the list, the editor only reads it
+- Read again before every run
+- Protect wins over every list, folder entry and preset
+- Works in presets, BASIC and ADVANCED toggles, Disable Marked
+    - also in CUSTOM VISUALS, LOAD GGPX packs, launcher commands
+- Not used by restores, the TEST tab or CSD colors
+- No list = nothing protected
+- A broken list stops every run before anything changes
+    - plain message in the app, launcher commands end with an error
+- CUSTOM VISUALS shows a green line: how many files stay on
+    - or a warning while the list can't be read
+- The log says how many protected files stayed on
+
+5.2
+  - moved "Sekhemas Trial" to the main navigation menu
+  - added affliction marking to the overlay
+
+5.1
+  - added Trial of the Sekhemas to ZONE INFO
+  - There is no overlay on the room-selection window: the client never links a map node to a room.
+  - so nothing can say which node a room is. This is an inventory of what the floor contains, not a route.
+
+  - minor bug fixs along some UI improvements
+
+5.0
+Scripting update — Player Buffs and Flask Inventory
+
+Lua scripts can now read your own buffs, on both PoE1 and PoE2.
+  -Player:HasBuff(id) — is it on me right now?
+  -Player:Charges(id)` — how many power / frenzy / endurance charges
+  -Player:BuffCount(id)` — for buffs that stack by repeating (leech, reservations)
+  -Player:BuffTimeLeft(id)` — seconds left
+  -Player:Buffs()` — print everything on you, to find the ids
+  -Player:Rage` — works on both games, even though they store rage differently
+  -Player:Flasks() - full flask inventory
+
+So you can finally script things like "I'm at 3 power charges" or "my buff just fell off".
+Still read-only — nothing is written to the game.
+
+The scripting API page and the examples page are updated, with copy-paste scripts for each.
+
+OTHER ADDITIONS
+  - TormentedSpirits can now be tracked via FORCE SHOW
+  - FIXED the unique item ground loot finder to find charms
+  - "BEAST" can now be chosen as a filter for a rule in MONSTER WATCHER
+  - <3
+
+4.9
+  - MINOR bug fixes
+  
+4.8
+  - UPDATED for 0.5.5
+
+4.7
+  - OVERLAY
+    - FIXED LUA ENGINE enemy markers for "hidden/dormant/inactive" Monsters
+    - LOG List has a scrollbar now ^^
+    - fixed the SAVED toast position in the Webserver
+    - minor UIX fixes as well - everything pretty now <3
+
+4.6
+  - OVERLAY
+    - ADDED a full Script-Engine to the Overlay
+    - CODING is being done one the local webserver
+    - LUA based code
+    - WORKS on the OVERLAY based POEMEMORY
+    - FULL DOCUMENTATION and Examples on the website
+      - https://poe2-autopot.com/scripting-api.html
+      - https://poe2-autopot.com/scripting-examples.html
+
+    - This is a first "sample" so to speak
+    - more additions to the MEMORY MODEL might come in the future
+    - FEEDBACK NEEDED! ^^
+
+4.5
+  - EDITOR
+    - ADDED 8.0x and 10.0x zoomout on the slider END
+
+  - OVERLAY
+    - ADDED a METADATA WATCHER to MONSTER WATCHER to simply track monsters by METADATA tags as well
+      - Beasts would be a prime example; thanks for the feedback <3
+      - THREAT INDICATOR added
+    - FORCE SHOW Entities now also has the option to draw a rectangle on the screen
+      - this way you can track any ENTITY directly on the Screen and not only on the Minimap
+      - best example are "sunken chests" or "message in a bottle" - disappear when taken
+      - those rules are identical in "action" - usability wise a distinction in places to configure
+    - ATLAS NODES
+      - ADDED an exclusion option per rule <3
+      - adjusted the UIX options for the ruleset to be easier to navigate
+
+4.4
+  - OVERLAY
+    - added UNIQUE ITEM groundloot tracker in FORCE SHOW
+    - get notified when a real HEADHUNTERS drops and ignore trash Leather Belts <3
+
+
+4.3
+  - OVERLAY
+    - fixed LEGION monsters to be hidden before activation
+    - <3 ; thanks for the feedback!
+
+  - generally some minor UI fixes and wording corrections
+
+4.2
+
+-- OVERLAY
+Dashboard UI Update — Tabs & Cleaner Lists
+
+Now split into tabs: Entities · Navmesh · Toast Settings — no more one endless scroll
+Each entry is a single row instead of a bulky 3-line block — on/off, color, shape, size, opacity, sound alert + range, and toast!
+You can now edit a rule's path directly — click it, type, done (saves instantly)
+Force Hide now has Entities · Navmesh tabs too.
+Force Show now has filter options by TEXT and SHAPES + slightly more ONE-LINER feeling
+
+Settings split into General · Icon Styles · Icon Overrides tabs.
+Small extras: wider name field, fixed a label typo, tidier spacing.
+
+Everything is backwards compatible — your existing configs work exactly as before.
+
+-- TradeBot
+MAX RUNTIME in Minutes added to the UI - leading limit if on!
+
+4.1
+  - OVERLAY
+    - fixed the need for re-opening the minimap each new zone
+
+4.0
+
+  - POE1 MEMORY UPDATE
+
+  - OVERLAY
+    - MONSTER MOD WATCHER renamed to MONSTER WATCHER
+    - allows to track RARE + UNIQUE enemies without mods now as well
+
+  - EDITOR
+    - SEARCH OPTION for LOAD GGPX
+      - easier now to find your desired MTX to swap to
+    - added several ARMOUR SETS and PORTALS for POE1
+
+    - Armour Sets
+      - Arctic Set
+      - Automaton Lightning Set
+      - Automaton Necrolord Set
+      - Black Set
+      - Celestial Necrolord Set
+      - Darkshard Set
+      - Default Set
+      - Demon Parasite Set
+      - Direblade Set
+      - Divergence Set
+      - Dragon Set
+      - Emperor Set
+      - Eyrie Set
+      - Fire Set
+      - Fractured Dreamer Set
+      - Gargoyle Set
+      - Ghostflame Set
+      - Gloom Set
+      - Heartseeker Set
+      - Hellfire Set
+      - Nethermancer Set
+      - Nightfall Set
+      - Polar Set
+      - Transcendence Set
+      - Voidborne Set
+      - Vulcan Set
+      
+    - Portals
+      - Black Hole Portal
+      - Default Portal
+      - Demonking Portal
+      - Demonking Arcane Portal
+      - Demonking Divine Portal
+      - Demonking Necrotic Portal
+      - Dragon Hunter Portal
+      - Shaper Portal
+      - Siren Portal
+      - Spirit Portal
+      - Storm of Divinity Portal
+
+3.9
+  - POE1 / POE2 memory update
+
+3.8
+  - OVERLAY
+    - added a search filter for the live listings in PRELOAD
+    - added a 'FOLLOW' marker for a specific character name
+      - COMMUNITY -> COMMUNITY / FOLLOWER
+      - it marks a PLAYER (matching by name / case-insensitive)
+      - draws a fully opaque colored square over the character
+      - i will not provide you a follow bot!
+      - this is the easiest way for you to 'follow' with a visual marker
+
+3.7
+  - OVERLAY
+    - added full POE1 support <3
+      - GAMEPAD support as well!
+    - added per zone EXPERIENCE tracker
+      - can be displayed above the experience bar in-game
+    - added TOAST alert feature on FORCE SHOW
+      - get a visual TOAST when your favorite beast shows up for example
+    - added PRELOAD feature
+      - POE + POE2 <3
+
+  - EDITOR
+    - removed remote backup
+    - removed basic restore
+    - official GGG restore is superior and seems to work flawlessly for everyone
+    - POE1 full support added <3
+    - added support for multiple personal restores (per game version / patch)
+
+  - VIRTUAL GAMEPAD
+    - removed reWASD dependency
+    - the controller KEY-Presses now work fully on their own
+    - BUT we need 'HidHide'
+    - this is the much much easier setup!
+    - and we can use proper BUTTON NAMES
+
+    _CTRL_KEYS := { DpadUp, DpadDown, DpadLeft, DpadRight
+                  , Triangle, Circle, Cross, Square
+                  , ButtonA, ButtonB, ButtonX, ButtonY
+                  , L1, R1, L2, R2
+                  , LB, RB, LT, RT
+                  , L3, R3, LS, RS
+                  , Share, Back, Options, Start
+                  , PS, Xbox, Guide }
+
+    - if you cannot be bothered switching
+      - the old "virtualGamepadPoe2.exe" will still work and is included in the release
+      - simply go into the dependencies folder and find/rename "_virtualGamepadPoe2.exe"
+
+    - TRADE BOT
+      - added support for POE1
+
+    - CLEANUP
+      - removed everything no longer needed/referenced
+
+3.6
+  - BUYBOT
+    - removed 1440p support
+      - 720p + 1080p window mode only
+    - fixed the last accuracy issues
+    - 1x1 items like Precursor Tablets are now bought properly every time
+    - added back the click delay after loading time finishes
+      - 300 ms is default -> should be a good baseline really
+    - fixed HDR bug
+      - the game can now run at any graphical settings
+
+3.5
+  - FULL CONTROLLER overlay support
+  - <3 <3 <3
+
+3.4
+  - crash fix; sorry <3
+
+3.3
+  - EDITOR
+    - NEW "Official restore" option when applying presets (now the default): resets your game to the GGG default
+    - OFFICIAL restore online only! — fetches the official files from GGG's servers
+      - IF GGG's servers can't be reached, you'll get a clear prompt to use a Personal or Remote backup instead
+    - NEW ALERT: when a game update has reverted your edits, reminding you to re-apply your setup
+    - OFFICIAL patch means now safe to override with your wanted edits!
+      - corrupted game files should be the past now <3
+
+  - OVERLAY
+    - ATLAS content icons — map content (Breach, Map Boss, Essence, Ritual, Expedition, and more)
+      - now shows as icons right on the atlas map nodes; turn them on/off and adjust their size in the ATLAS NODES
+    - "Always, everywhere" mode — optionally shows content icons on every map visible on your atlas screen
+      - not just the ones you're tracking
+    - Declutter filters — new options to hide completed maps and maps you can already run
+      - so the overlay only highlights the maps you're heading toward (both on by default)
+    - Built-in map highlights — Citadels (yellow) and Unique maps (orange) are now highlighted automatically
+    - Content descriptions — hover a content tag in the ATLAS LIVE view to see what that mechanic actually does
+    - Smarter map recognition — atlas now reads real map names and types for more accurate tracking
+  - BUYBOT
+    - removed test button
+    - tablet purchase can be bugged - no solution yet / sorry <3
+    - added LEGACY MODE to be controlled via whatever you like
+      - no auto focus; no travel control; your choice how to trigger the travel
+
+3.2 DEV
+  - TRADE BOT
+    - updated addon for single window refresh
+    - no more all window refresh!
+    - removed persistent refresh settings
+    - added a warning message for abusive usage
+  - EDITOR
+    - minor LOG OUTPUT fixes
+  - OVERLAY
+    - RARE MODS WATCHER is now "MONSTER MODS WATCHER"
+    - added support for UNIQUE monster tracking - same rule type/set
+
+3.1
+  - OVERLAY
+    - fixed internal STRUCT movement
+
+  - TRADE BOT
+    - RELEASE - like the instantbuy but better <3
+    - new addon needed
+    - all options in the TRADEBOT UI
+    - for multi livesearched -> NEW WINDOW! TABS do NOT work!
+
+3.0
+  - OVERLAY
+    - RARE MODS WATCHER can now look for...
+      - ... monster NAME (partially and "case-insensitive" allowed)
+      - ruleset "count" like POE TRADE website (you know what i mean)
+      - <3
+
+  - GGPX EDITOR
+    - minor UI fixes
+    - UI points out when the remote RESTORE changed so you know the true untouched has changed
+    - BACKUP/RESTORE is now pretty <3
+    - EXTRA TAB: +19 Protect/Disable bundles
+      - per-act & per-league monster VFX, affix tells, environment/ambient particles
+      - ailment & curse visuals, skill-group FX
+    - COLORED STATS
+      - self edit of ingame text through all available files
+      - self edit of each LANGUAGE text
+      - added import / export functionality
+    - added ALWAYS SHOW MONSTER HP BAR
+    - added REMOVE DEAD MONSTER AND CORPSES
+    - NEW BASIC toggles
+      - Always Show Monster HP Bar every monster shows its health bar
+      - Remove Monster Corpses bodies disappear shortly after death (no corpse pileups)
+      - Remove Shattering Ice Effect
+    - the window can now be MAXIMIZED (button + double-click the title bar)
+    - tidier BASIC tab (two toggles per row)
+    - ADVANCDED TAB — grouped by preset usage
+
+2.9
+  - ATLAS NODE can be toggled on/off now
+  - GGPX EDITOR Light and Medium Preset fixed
+    - those removed too many effects across player and monster effects
+  - PRESETS can now load backups automatically prior of running itself
+
+2.8
+  - RARE mod watcher marked on minimap
+    - optional sound alert
+  - RARE mod watcher shows live the closest monster by NAME
+    - and the full monster affix list
+    - no more guessing of the big list <3
+  - ATLAS NODE can now look for the UI name and no longer internal name
+    - no more guessing of the "real" name <3
+  - ATLAS NODE can now mark by BIOME
+    - do not forget to swap the matching type for that marker ;-)
+    - it will autoswap if you type it exact to help <3
+
+2.7
+  - (confirmed working - false report) fixing rare mod watch rules not being saved
+  - fixed overlay cannot be started again
+    - the dead overlay process will terminate now properly if poe2 closes
+  - added hp bar smoothing which should resolve most of the jitter on big monster packs
+  - WORLD and RENDER pass are now seperate in CODE
+    - resolves render spikes on lower end systems
+
+2.6
+- ASSISTANT
+  - adjusted _POEMEMORY.BUFFLIST readings to catch crazy op builds as well ^^
+- OVERLAY
+  - added hp bar caching and increased position polling speed
+    - this way health bars appear smoother in higher density scenarious
+    - "_always show enemy hp" via assistant is the better choice really!
+  - added a "max draw range" to ATLAS NODES in the webserver
+      - 0 -> infinite / otherwise "tiles" from your current viewpoint (not position in atlas)
+  - added "LIVE ATLAS" section where you can see your current nodes
+      - all available details are exposed
+      - mouseover on a map ingame puts the node on top of the list and marks it orange
+      - this way can inspect nodes and see internal data to compare your filter/rules against
+  - added ATLAS DUMP into a TXT on the set DUMP key for better data view
+- GGPX VIEWER
+  - fixed list EXPORT / IMPORT
+  - fixed install path detection
+  - fixed an issue where loading is possible at no path set yet
+  - added POE running detection just for good measure
+  - added UI protection for loading on failed conditions
+  - added visual COLOR guidance on possible errors <3
+  - added visual TOAST for certain actions
+  - added double list entries detection (no longer possible)
+  - added.GGPX exceptions to prevent loading errors
+  - increased patching speed by 2x for smaller files
+- OVERLAY
+  - added RARE MOD WATCHER on the api server <3
+    - range is only limited to the current entity memory max distance exposure
+    - sadly no database on current available monster mods
+    - overlay tracks all rare monster mods and exposes them on the api server
+    - you can click and add it to the "watch list"
+    - only a perfect match works (you want 3 mods -> then on only this exact combination is being looked for)
+    - mod names are internal names
+      - "MonsterIncreasedSpeed1" -> obviosuly HASTED
+  - added full DEFAULT restore option
+  - added import / export functionality for rare monster mod watcher
+  - added PUBLIC REPO for community full settings import
+    - api server COMMUNITY navigation point lists published settings (full or partially)
+    - a current settings BACKUP (locally) is happening before applying of cosue
+
+2.5
+  - added GGPXviewer for proper GGPX file choosing and loading
+    - search function is also there
+    - 'twister' is easy to find now ^^
+    - finally sorry ^^
+  - <3 <3 <3
+
+2.4
+  - fixed minor UI issues
+  - disabled overlay rendering in town/hideout
+  - overlay hotkeys fire only when poe2 is the active window
+    - F9 still fires globally to close the overlay
+  - adjusted api server UI to scale bigger and would still fit 1080p
+  - added shape choice for each entity or navmesh
+  - added elevation z-correction on all _POEMEMORY entries
+    - position now matches the minimap location while moving up or down stairs
+    - entities live in 3D — this offsets each dot by its height - dots on stairs/ledges stay correct
+  - added minimap shift x-y-correcttion on all _POEMEMORY entries
+    - minimap pan match correction -> 0.8 is pretty accurate for most users
+  - added SESSION STATS backend data to api server
+    - this shows some stats while you are in a map/act/not-town
+  - added force show navmesh detailed visual settings
+    - same as for entities now
+  - added sound alert for force show entities and navmesh
+    - added a global volume setting
+    - range condition on entities / no need for navmesh infinite range detection
+  - added ATLAS NODE search and filter feature
+    - you can now search and track atlas nodes across full generated range
+    - decide if map name OR tag should be searched OR both!
+    - decide on color + size + offscreen indicator
+    - reveals also hidden nodes attributes (experimental)
+    - hit indicator like visual clue were to scroll to
+    - exposed json list entries and edit in the api server
+  - changed force show rules behavior
+    - most top one overrides any upcoming match
+    - added ordering arrows to force show lists
+  - added configurable hotkeys in the api server UI
+    - it's like you know in video games
+    - bind key -> wait for next input -> saves it
+    - added backend arming for hotkeys to solve issues while holding down the key
+  - added a RULE INSPECTOR to LIVE DATA
+    - you can check why this entry is visible
+  - added a FULL CONFIG -> RESTORE / BACKUP feature
+    - this way full configurations can be shared or secured
+  - added profiles to live / instalty switch
+    - campaign / mapping / minimal / whatever you like
+  - added shadowed-rule warnings
+    - webinterface shows if a rule is "shadowed" by an former entry and rendered 'useless'
+  - added VM obfuscation and an encryption layer over the virtualized bytecode
+  - <3 <3 <3
+
+2.3
+  - added navmesh force hide option
+    - forgotten on 2.2...
+    - a click on the live data list now works correctly
+
+2.2
+  - fixed Overlay not showing monster dots in some cases
+  - fixed Overlay displaying friendly units as red dots
+  - fixed Overlay showing numerous invalid navmesh dots in some areas
+  - added a local WEB-SERVER for Overlay settings
+    - !RIGHT DOCK MENU! contains a button to open the webserver
+    - adjust Overlay settings without restarting the app
+    - adjust Overlay settings while in-game
+    - feature list is too long to list here - check the webserver for details
+    - this is an early version of the webserver - more features will be added over time
+  - changed method of resolving path of exile executable metadata
+    - this should resolve the infamous UAC access error
+
+2.1
+  - added an option to reload threads
+    - !RIGHT DOCK MENU! contains a button to reload threads
+    - this is useful to apply changes to the AHK THREAD files without restarting the app
+  - added integrity check for critical files before execution
+  - added a server side check for the integrity of the GGPX files to avoid corrupted game files
+    - if the check fails, the app will prompt you to re-download the GGPX files
+    - this should significantly reduce the chances of corrupted game files due to patching errors
+  - added GITHUB as the primary source for GGPX files
+    - backup sources are still in place and will be used if the GITHUB source is unavailable
+  - fixed an issue with lingering monster dots on Overlay
+    - exposed setting to disable normal monster dots on Overlay for better visibility
+    - !RIGHT DOCK MENU! contains a toggle for showing normal monster dots on Overlay
+  - Overlay does not work with Controller Input (no ETA for support)
+
+2.0 (new cycle)
+  - fixed Town/Hideout detection for POE2
+  - added support for Overlay on POE2 (experimental)
+    - must be started when already in an active area
+    - renders only when minimap is opened
+    - works very well together with the minimap reveal
+
+9.7
+  - fixed zoomout issues during campaign
+  - fixed and error with blackscreen crash
+  - finalized support for MTX swapping
+    - POE2 MTX: Armour Sets - Skill Effects - Portal Effects
+    - MTX swapping is ongoing -> new will be added over time
+  - fixed an issue on korean game client related to BUFFLIST
+
+9.6
+  - fixed _POEMEMORY for the script engine (ty for the detailed reports) <3
+  - added a backup source for the GGPX download in case we get rate-limited by GOOGLE
+  - fixed GGPX patching by ignoring missing files
+    - in theory this should avoid corrupted game files 9/10 times
+    - please keep your game files (Content.GGPK / Bundles2 Folder) as a backup if you don't want to download again
+  - improved initial atlas rendering speed when using atlas reveal feature
+
+9.5
+  - quick release for 0.5.0 league start
+
+9.4
+  - added support for MTX swapping
+    - POE1 added a bunch of skill MTX
+    - POE2 soon
+  - added detailed error reporting to 'error.txt' (root folder)
+  - adjusted UIX accordingly
+  - fixed an issue with japanese game version for POE2
+  - reduced VRAM usage on HyperV machines
+
+9.3
+  - added Custom Thread 3 and 4
+    - thanks for the feedback
+  - fixed an issue while patching game files
+  - fixed an issue with WIN11 26H1 (28000)
+  - improved patching speed
+  - removed some AV false positive by changing real-time compiler method
+  - further reduced CPU/GPU usage while using a GPPX "preset"
+  - added 6.0x and 8.0x zoomout to the default GGPX release
+    - i tried my best to solve texture and object pop-in with these <3
+  - adjusted some non-english language expressions
+
+9.2
+  - remove delirium fog fixed
+  - remove monster corpses fixed
+  
+9.1
+  - experimental testing
+
+9.0
+  - zoomout fixed for 3.28 Mirage
+  - thanks a lot for the patience
+
+8.9
+  - MEMORY UPDATE for 3.28 Mirage League
+    - Autopot and Script Engine working like before
+  - restore function fixed (no longer corrupted game files)
+  - zoomout currently not functional (fixed in time)
+  - minimap reveal is working without errors
+    - errors may occur due to POE1 native issues
+
+8.8
+  - bug fixes - ty for the reports
+
+8.7
+  - exposed POE2 playerstat "RAGE" for scripting
+    - _POEMEMORY.CURRAGE
+    - _POEMEMORY.MAXRAGE
+    - POE2 only since RAGE is a buff in POE1
+
+  - fixed a conflict with the newest RADEON drivers
+  - fixed a minor memory issue with chinese and japanese game version
+
+8.6
+  - fixed .NET v.10 version error
+    - assistant now focuses on .NET v.8.0.X versions only
+
+  - fixed a minor rare minimap reveal issue
+  - renamed "remove effects" function to "GGPX file load"
+    - blackscreen mode as well in same fashion
+
+  - improved loading times on preset: ligh/mid/heavy
+    - significantly improved loading times on blackscreen
+
+  - adjusted 'low memory mode' on virtual machines
+    - hyper-v and vmware machines RAM and V-RAM usage reduced by 40%
+
+  - improved general POE memory model to have none to little overhead
+  
+8.4
+  - fixed minimap exploration area being twice the size
+  - fixed minor issue with internal GGPX downloader
+  - fixed general minor errors
+  - added an extra more transparent minimap option for GGPX loading
+
+8.3
+  - fixed minimap reveal reset on area change
+  - fixed player stat readouts on specific events
+  - fixed general minor errors
+
+8.2
+  - added POE 0.4.0 support
+  - good luck everyone <3
+
+8.1
+- GGPX skill list loading feature
+- general fixes and improvements
+
+- POE2 :: GGPX UPDATE (temporarily)
+
+- YOU MUST update all files - everything prior is outdated
+  - use the '_GGPX download' button to get up to date files
+
+8.0
+- GGPX list loading feature
+  - supports relative file paths
+  - includes sample configurations
+  - editable on-load via assistant or with notepad
+  - keep a backup â€” updates overwrite the list file
+  - significantly reduced ggpx load times
+
+- refactored code for lower AV footprint and reduced intrusiveness
+
+- YOU MUST update all files - everything prior is outdated
+  - use the '_GGPX download' button to get up to date files
+
+7.8
+- general fixes and improvements
+
+7.7
+- fixed minimap reveal reset on re-entering a zone/map
+  - works like before
+  - no fuss / no caveat -> exactly as before
+
+7.6
+- updated offline game files for poe2
+- added UI GGPX version display
+- added UI download of current GGPX files
+- added auto restart on certain UI options
+  - keeping app elevation
+
+7.5
+- updated offline game files for 3.27
+- added an UI option to reset game paths
+
+7.4
+- added support for upcoming 3.27 poe1 release
+  - 99.99% sure we will have no delay at league start
+
+- (experimental) reduced loading time with light/mid/heavy/blackscreen preset
+  - non-essential stuff like sounds and effects are no longer being pre-loaded
+  - report any issues or anomalies in #bug-report
+
+- adjusted memory model to support dynamic runtime changes
+- adjusted multi-threaded memory readouts
+- updated internal patcher for compatibility with game "hotfix" updates
+  - high probability for small hotfix updates being virtually irrelevant
+
+- added "dual" autopot version for life and es to be considered at the same time
+- added automatic detection for poe2 japanese game version
+- added full support for japanese game version
+- added client side system time synchronization even if disabled by windows settings
+
+- added â€œlow memory modeâ€ for VM users
+  - this will be active automatically while using blackscreen mode for botting
+  - in theory it can safe up to 20% of system memory
+
+- added minor internal metrics for future optimization
+- improved accuracy of flask trigger logic under unstable frametime performance
+- fixed high startup time on Hyper-V / VmWare
+- fixed a rare lighting issue in interlude section of the game
+- fixed a bug where bufflist occasionally duplicated expired entries
+- fixed incorrect region parsing when game language is korean
+- fixed a rare edge case of high cpu usage after conintious gameplay of 10+ hours
+- fixed scaling issue at >200% dpi
+- general cleanup of obsolete debug code
+
+- improved support for handheld devices (others most likely work fine)
+  - ASUS ROG Ally (X)
+  - Lenovo Legion Go
+  - MSI Claw (series)
+  - AYANEO 2
+
+7.3
+- added japanese hideout detection
+
+7.2
+- minor bug fix
+
+7.1
+- fixed a rare edge case while loading GGPX files
+- added a dock like settings window for future features
+  - exposed tickrate scaling
+  - 0   -> 50  updates/sec
+  - 100 -> 200 updates/sec
+  - this is mostly a placebo slider / the updaterate is out of human perception
+
+7.0
+- fixed an issue with hideout detection
+- added chinese hideout detection
+- fixed a rare issue with bufflist readouts
+
+6.9
+- general update for 0.3.0c
+- korean hideout is detected now 
+
+6.8
+- fixed an issue with life readout in some rare cases
+- fixed an issue with internal bufflist having dead entries
+- fixed a rare crash after updating windows
+    - version 24H2 - build 26100.6584
+
+6.7
+- fixed POE1 memory model
+- added self update method for POE1
+
+6.6
+- 0.3.0 POE2 memory model update (permanent fix)
+  - mandatory update to support self update method
+  - small patches do no longer break functionality
+
+6.5
+- 0.3.0 POE2 memory model update (temporary fix)
+- server side patch - restart the app to fetch the update
+
+6.4
+- fixed readouts for playerstats on POE1
+- prepared changes for v6.5 to support POE2 0.3 release
+
+6.3
+- fixed a rare issue with patching spells on POE1
+
+6.2
+- added support for korean language
+- fixed a rare crash after updating windows
+	- version 24H2 - build 26100.4652
+- reduced download size on startup
+
+6.1
+- fixed zoomout issue on POE1
+- fixed minimap reveal being reversed in some rare cases - both game versions
+- improved responsiveness with controller auto potion
+- fixed a rare crashing issue on WIN 11 26100.4351
+
+6.0
+- fixed energy shield readout
+- fixed charge value readout on buffs
+- updated quicksilver flask script for better usage
+  - check **scripts** folder
+
+5.9
+- 3.26 POE1 memory model update
+- enabled ESCAPE instead of DISCONNECT logout (game pause got introduced)
+- added support for text highlighting on all available languages
+- fixed 2.4 / 3.0 zoomout
+
+5.8
+- 0.2.1 POE2 memory model update
+- general update with internal changes
+- improved debug thread
+
+5.7
+- prepared update for 3.26 POE1 memory model
+	- assisant will be ready shortly after the league start
+- added support for text highlighting on all available languages
+- fixed a rare 'corrupted application' error
+
+5.6
+- minor bugfixes
+- enabled auth on non-windows user devices
+- added an independent updater
+  - current settings are preserved
+  - current script files backup
+  - per region server detection: Cloudflare preferred
+
+5.5
+- fixed a critical error on virtual machines
+	- thank you for the precise reports! <3
+- added 2 POE1 scripts for Quicksilver and DPS flasks
+- added another server to fallback on if the app update fails
+- general bug fixes and corrections
+
+5.4
+- removed server choice out of the config.ini
+- added in-app server detection based on your region
+	- added chinese mainland server
+	- added south/north america server
+	- added russian server
+- fixed long startup time on WIN11 24H2 in some rare cases
+- added LICH Eternal Life AUTOPOT method
+
+5.3
+- fixed server encryption
+- fixed a potential issue with WIN11 24H2 where patching did not work
+- fixed a couple corrupted file errors potentially breaking the game
+
+5.2
+- added several error codes for reporting issues while applying zoomout and similar
+	- check config.ini -> ErrorEx
+	- usually PackCheck.exe or re-downloading the game helps!
+	- most issues are related to corrupted game files
+
+5.1
+- fixed steam version mismatch
+- GGG is mixing again
+- studio is on fire
+
+5.0
+- 0.2.0 POE2 memory model update
+- fixed a visual UI bug on WIN11 24H2
+- fixed virtual controller performance while multiple physical controllers are connected
+- fixed virtual controller behavior while a bluetooth controller is present
+- fixed a patching error regarding to the steam version
+- fixed an input issue while running together with EB2
+	- EB2 input has higher priority depending on the situation
+- improved VmWare/Hyper-V patch performance
+- improved POE2 loading times after applying presets
+- improved handheld compatibility
+- simplified lighting/shadow calculation on all presets
+	- theoretical lower stress on GPU shader performance
+- changed auth regeneration
+- many more internal changes regarding app safety
+	- we are feature focused of course but safety first!
+
+4.6
+- changed how you choose between POE1 and POE2
+- combined all possible AUTOPOT variantions
+	- added drop down menu to select AUTOPOT version
+- fixed some scripts
+- fixed server side GGPX compression
+
+4.5
+- added support for effect removal/blackscreen mode
+	- download from the sources like before
+	- choose the correct folder of course ^^
+	- POE1 has a different folder and different files (even if names are the same)
+- enabled controller support for POE1
+- fixed scripts for POE1/POE2
+	- fixed double e press
+	- fixed q press
+4.4
+- POE1 support
+  - basics like minimap reveal and zoomout works!
+  - GGPX files coming later
+- unified AUTOPOT THREAD to have Mind over Matter support with UI checkbox
+- added several THREADS to UI
+- added "CUSTOM 1" THREAD
+- added "CUSTOM 2" THREAD
+- changed how THREADS are reloading settings on SAVE
+    - changing UI settings will cause THREADS to reload, regardless of whether the current THREAD is halted
+- fixed chain disconnecting when coming back to hideout
+- final fix for Hyper-V Support!
+
+4.3
+- VmWare/Hyper-V machines are now fully supported
+- added an option to enable/disable hideout for scripts
+- fixed an error which could occur while using Epic Games version when applying zoomout or similar
+- added POE1 support (not functional yet - but well prepared)
+
+4.2
+- general update
+- added several user scripts
+
+4.1
+- fixed high charges detection
+- added UISTACK pointer to track skills with UI specific stacks
+- added DEBUG THREAD to post all current player buffs and values
+
+4.0
+- added buff based pointers
+	- found in _POEMEMORY.BUFFLIST by internal memory name 
+- added __THREAD__CUSTOM
+	- create your own script depending on memory state
+	- config.ini to enable
+
+3.9
+- added Epic Games offset switch internally when detecting the game
+- added a chinese offset switch option in the UI
+- added support for handheld devices like the ASUS ROG Ally (reWASD needed - Windows only)
+- added a UI key for charged staff script usage
+- added a UI checkbox for __THREAD__BUFF to enable automatic charged staff usage
+- added missing keys to virtual gamepad
+- updated scripts to align with internal data changes
+- updated chinese translations
+- fixed an issue where charged staff key could be spammed
+
+3.8
+- updated chinese translations with help of a native
+- added buff based pointers
+	- power charge
+	- frenzy charge
+	- charged staff (monk skill)
+	- dm me to ask for more relevant buffs!
+- added __THREAD__BUFF thread to automate charged staff for example
+- updated internal memory model
+	- current memory model is patch safe
+	- meaning a patch cannot break offsets anymore
+- removed updater
+	- too many dependencies (almost never possible)
+
+3.6
+- added support for chinese localization
+- changed many internal functions
+
+3.5
+- 0.1.1 Patch ready
+- introduced 6 new detections on virus-total
+- fixed rubber-banding issues with monster hp always shown
+- resolved zoom-out-related issues
+- addressed a potential critical error when attempting to connect to github
+- added chinese region specific server to solve connection issues
+- config.ini allows server choice
+- introduced a new file format: 'ggpx'
+	- partial rewrite of LibGGPK3 for better performance and ggpx support
+	- significantly reduced overhead as a data type
+	- significantly improved patching speed!
+	- enabling delta patching of the original GGPK, though defaults must still be reloaded each time
+
+3.3
+- removed mandatory auth.key creation  (would only limit free users)
+- removed region check for known users (verified skips it of course)
+- fixed bug -> known files corrupted
+- fixed bug -> options cannot be applied
+- fixed bug -> out of sync with server time (time zone independent now)
+- added back "altered effects" option with prototype selections
+
+3.2
+- bug fix - sorry!
+
+3.1
+- atlas fog remove -> added clearer lines between maps!
+- added a singular option to apply custom effects (will be available soon)
+- poe2 installation path is saved and settings are applied with 1-click
+- fixed updater to properly update the current encryption key
+- region check is disabled upon reaching poe loaded state once
+- disabled ping check error message (https://github.com is mandatory to reach)
+- south america region should be supported natively now
+
+3.0b
+- minor bug fixes
+
+3.0a
+- added anti anti-cheat measures
+- added randomized filename (will rename on first startup)
+- added randomized window title
+- added inTown() check to scripts
+- added remove shadows/effects feature
+- added black screen mode feature
+- added server auth with private key feature
+- added fully encrypted server communication
+- added chinese region check because of illegal reselling
+- added a non-mandatory ping check (reveals potential connection issues)
+- changed binary compression and encryption to a private/unique method
+- changed data location to github
+
+2.3a
+- added remove atlas fog feature
+- added always show enemy hp feature
+- added remove delirium fog feature
+- added thread sync (internal function)
+- added notification message for free software
+- fixed zoomout reset during campaign and certain boss encounters
+- fixed an issue where XButton and Escape did not work as keys
+- increased basic tickrate by 5x (average readout now 25/sec)
+- adjusted GUI speed due to increased tickrate (GUI does not represent internal speed)
+
+2.2a
+- added controller support
+- added error handling of some edge cases
+- added support for hybrid builds
+- added support for mana as life builds
+
+2.1d
+- fixed network bug with proxifier
+
+2.1c
+- added partial controller support (button presses not yet)
+- added tooltip support for GUI
+- added more in-app guides
+- fixed .NET version check dependencies
+
+2.1b
+- all existing game versions are fully supported now
+- added minimap reveal to Steam and EpicGames version
+- added zoomout to Steam and EpicGames version
+- added proper message popup display
+- added in-app guides
+- added .NET version check dependencies
+- fixed rubberbanding while zoomout is active
+- removed in-memory maphack (deprecated solution anyway)
+
+2.0a
+- added minimap reveal (fog of war rendered)
+- added zoomout: x1.3 x1.6 x1.9
+- added function to restore GGPK (do that before you patch the game - run nopatch to avoid patching)
+- added automatic detection of game version (normal,steam,epic,korea,taiwan)
+- added configurable flask hotkeys
+- added local/server version display on GUI
+- added user input block on escape instead of logout to prevent deaths on input spam
+- improved tickrate
+- improved startup behavior
+- improved GUI performance
+- fixed out of screen GUI position
+- fixed behavior with Blood Magic
+- fixed GUI DPI scaling
+- fixed handling for encrypted VPN error (most VPN simply work - some chinese don't)
+
+1.6a
+- added maphack
+- added configurable hotkeys into GUI
+- startup is now almost instantly
+- server verification is now almost instantly
+- added save and exit sound
+- updated GUI
+- press ESCAPE instead of logout feature
+- fixed a bug with Chaos Inoculation
+
+1.5a
+- added a GUI for general settings and readouts
+- changes are valid immediately
+- script restructure
+- fixed button spam while dead
+
+1.4d
+- added korean client support
+- added epic games client support
+- fixed windows 11 restriction/bug
+- fixed server time error
+
+1.3a
+- added an updater to download the most recent version
+- changed patch detection
+- checking for app elevation (run as administrator is required)
+
+1.2a
+- added steam version support
+- added patch detection
+- run with proper admin rights
+- whitelist in antivirus software to avoid issues
+- korea client will not be supported
+
+1.1d
+- added version check for steam/korea
+- standalone client only for now
+- cleared up __THREAD__UTILITY (please adjust your values)
+
+1.1c
+- added active window check before keypress
+- added security check for character stat values
+
+1.1b
+- december 7 memory update
+- first functional release
+
+1.1a
+- initial release
+- draft __thread__utility
+- draft __thread__keystate
+- draft __thread__temporalrift
+- not functional; intended for inspection purposes only
+- current functions:
+  - autopot hp/mp
+	- autologout on lowhp
+	- any macro with a hotkey
+	- any combo skill while holding down a key for 500ms (as an example)
+	- chronomancer temporal rift assistance; only trigger if hp/mp is high enough (configurable values)
