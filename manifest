@@ -1,4 +1,4 @@
-﻿5.9
+﻿6.0
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,15 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+6.0
+--- OVERLAY ---
+  - added support for a OVERLAY drawn Minimap
+    - enable it in ZONE INFO (default off)
+  - WILDWOOD visible now
+
+--- EDITOR ---
+  - fixed item stats COLORING for POE1
+
 5.9
 --- ASSISTANT ---
   - general update and hotfix + 5.8++
