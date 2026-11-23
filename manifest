@@ -1,4 +1,4 @@
-﻿6.1
+﻿6.2
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,15 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+6.2
+--- OVERLAY ---
+  - adjusted HIDDEN and FORCE SHOW rules which could be wrong in some edge cases
+  - added "go back top" when scolling far down a page (on all pages) (bottom right)
+
+--- EDITOR ---
+  - added a FILTER to the RESULTS
+  - added OPERATORS like "AND" and "OR" for the FILTER to further cut down search results if needed
+
 6.1
 --- OVERLAY ---
   - small fix
