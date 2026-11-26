@@ -1,4 +1,4 @@
-﻿6.2
+﻿6.3
 updater_true
 min_updater_version=1.4
 
@@ -8,6 +8,10 @@ min_updater_version=1.4
 
 #--- LINE 9
 Changelog
+6.3
+--- OVERLAY ---
+  - added SKILL COOLDOWNS to LUA Scripting
+
 6.2
 --- OVERLAY ---
   - adjusted HIDDEN and FORCE SHOW rules which could be wrong in some edge cases
